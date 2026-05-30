@@ -1,16 +1,13 @@
-# Website VNPT Quảng Lập - Đưa khu vực lên đầu
+# Website VNPT Quảng Lập - Đổi tiêu đề đầu trang
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Đưa phần "4 khu vực phụ trách" lên đầu tiên, ngay sau thanh menu.
-- Giữ ảnh nhân viên kỹ thuật:
-  - Ka Đơn: Giang
-  - Quảng Lập: Tân
-  - Ka Đô: Thắng
-  - Proh: Yên
-- Giữ video, thiết bị thực tế, poster gói cước và thông tin liên hệ.
+- Đổi tiêu đề phần đầu thành:
+  "Cung cấp dịch vụ và sửa chữa kỹ thuật VNPT Quảng Lập"
+- Giữ nguyên 4 khu vực phụ trách.
+- Giữ ảnh nhân viên kỹ thuật, video, thiết bị thực tế và poster gói cước.
 
 ## Cách cập nhật lên Vercel
 
