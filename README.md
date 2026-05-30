@@ -1,15 +1,16 @@
-# Website VNPT Quảng Lập - Có ảnh nhân viên kỹ thuật
+# Website VNPT Quảng Lập - Đưa khu vực lên đầu
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
-## Đã gán ảnh kỹ thuật
+## Đã cập nhật
 
-- Ka Đơn: Kỹ thuật Giang
-- Quảng Lập: Kỹ thuật Tân
-- Ka Đô: Kỹ thuật Thắng
-- Proh: Kỹ thuật Yên
-
-Nhân viên kinh doanh vẫn giữ nguyên thông tin và có thể bổ sung ảnh sau.
+- Đưa phần "4 khu vực phụ trách" lên đầu tiên, ngay sau thanh menu.
+- Giữ ảnh nhân viên kỹ thuật:
+  - Ka Đơn: Giang
+  - Quảng Lập: Tân
+  - Ka Đô: Thắng
+  - Proh: Yên
+- Giữ video, thiết bị thực tế, poster gói cước và thông tin liên hệ.
 
 ## Cách cập nhật lên Vercel
 
@@ -19,8 +20,3 @@ Nhân viên kinh doanh vẫn giữ nguyên thông tin và có thể bổ sung �
 4. Thay file `index.html` cũ bằng file mới.
 5. Bấm `Commit changes`.
 6. Vercel sẽ tự deploy lại.
-
-## Ghi chú
-
-- Ảnh được nhúng trực tiếp trong `index.html`.
-- Không cần upload thư mục `assets`.
