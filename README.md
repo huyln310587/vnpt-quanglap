@@ -1,22 +1,27 @@
-# Website VNPT Quảng Lập
+# Website VNPT Quảng Lập - bản có gói cước và hình minh họa
 
 Bộ web tĩnh chạy tốt trên Vercel.
+
+## Nội dung đã có
+
+- Trang giới thiệu VNPT Quảng Lập.
+- 4 khu vực: Proh, Ka Đô, Ka Đơn, Quảng Lập.
+- Số Kỹ thuật và Kinh doanh từng khu vực.
+- Nút Gọi và Zalo.
+- Hình minh họa dịch vụ băng rộng cố định.
+- Bảng combo giá tham khảo: 200K, 220K, 235K.
 
 ## Cách đưa lên Vercel
 
 1. Giải nén file ZIP này.
-2. Vào GitHub và tạo repository mới.
-3. Upload toàn bộ file trong thư mục này lên GitHub.
-4. Vào Vercel → Add New → Project.
-5. Chọn repository vừa upload.
-6. Framework Preset chọn `Other`.
-7. Bấm Deploy.
+2. Vào GitHub và tạo repository mới, hoặc mở repository web cũ.
+3. Upload/thay thế file `index.html`.
+4. Vào Vercel → Add New → Project nếu tạo mới, hoặc chờ Vercel tự deploy lại nếu dùng repo cũ.
+5. Framework Preset chọn `Other`.
+6. Bấm Deploy.
 
-## File chính
+## Cách sửa giá gói cước
 
-- `index.html`: toàn bộ giao diện website.
+Mở file `index.html`, tìm các dòng `200K`, `220K`, `235K` rồi sửa thành giá mới.
 
-## Chỉnh sửa số điện thoại
-
-Mở file `index.html`, tìm đúng tên hoặc số điện thoại, sửa lại rồi commit lên GitHub.
-Vercel sẽ tự cập nhật lại website sau khi GitHub thay đổi.
+Lưu ý: Giá trên website nên xem là giá giới thiệu/tham khảo. Khi có chính sách mới, sửa trực tiếp trong file `index.html` rồi cập nhật lên GitHub.

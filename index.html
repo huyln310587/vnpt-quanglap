@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VNPT Quảng Lập | Cung cấp & Sửa chữa kỹ thuật</title>
-  <meta name="description" content="Trang liên hệ cung cấp dịch vụ và sửa chữa kỹ thuật VNPT địa bàn Quảng Lập: Proh, Ka Đô, Ka Đơn, Quảng Lập." />
+  <meta name="description" content="Trang liên hệ cung cấp dịch vụ, combo băng rộng cố định và sửa chữa kỹ thuật VNPT địa bàn Quảng Lập: Proh, Ka Đô, Ka Đơn, Quảng Lập." />
   <style>
     :root {
       --blue: #005baa;
@@ -12,6 +12,8 @@
       --cyan: #00aeef;
       --green: #12b76a;
       --orange: #f79009;
+      --red: #f04438;
+      --purple: #7a5af8;
       --bg: #f4f8fc;
       --text: #152033;
       --muted: #667085;
@@ -21,23 +23,19 @@
       --radius: 22px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(circle at top left, rgba(0, 174, 239, 0.18), transparent 30%),
+        radial-gradient(circle at top left, rgba(0, 174, 239, 0.20), transparent 30%),
+        radial-gradient(circle at 85% 8%, rgba(0, 91, 170, 0.12), transparent 28%),
         linear-gradient(180deg, #eaf6ff 0%, var(--bg) 46%, #ffffff 100%);
       color: var(--text);
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration: none; color: inherit; }
 
     .container {
       width: min(1180px, calc(100% - 32px));
@@ -62,13 +60,13 @@
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.93);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
     }
 
     .nav {
-      height: 72px;
+      min-height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -79,15 +77,15 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      font-weight: 800;
+      font-weight: 900;
       color: var(--blue);
       letter-spacing: -0.4px;
     }
 
     .brand-logo {
-      width: 46px;
-      height: 46px;
-      border-radius: 14px;
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
       background: linear-gradient(135deg, var(--blue), var(--cyan));
       display: grid;
       place-items: center;
@@ -98,24 +96,20 @@
 
     .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 18px;
       align-items: center;
       color: #344054;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 14px;
     }
 
-    .nav-links a:hover {
-      color: var(--blue);
-    }
+    .nav-links a:hover { color: var(--blue); }
 
-    .hero {
-      padding: 70px 0 52px;
-    }
+    .hero { padding: 66px 0 46px; }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.08fr 0.92fr;
       gap: 34px;
       align-items: center;
     }
@@ -129,7 +123,7 @@
       border-radius: 999px;
       padding: 9px 14px;
       color: var(--blue);
-      font-weight: 800;
+      font-weight: 900;
       box-shadow: 0 8px 24px rgba(0, 91, 170, 0.08);
       margin-bottom: 18px;
     }
@@ -147,14 +141,10 @@
       color: #475467;
       font-size: 18px;
       line-height: 1.65;
-      max-width: 720px;
+      max-width: 740px;
     }
 
-    .actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
     .btn {
       display: inline-flex;
@@ -163,7 +153,7 @@
       gap: 8px;
       padding: 13px 18px;
       border-radius: 14px;
-      font-weight: 800;
+      font-weight: 900;
       border: 1px solid transparent;
       transition: 0.2s ease;
       cursor: pointer;
@@ -176,10 +166,7 @@
       box-shadow: 0 12px 24px rgba(0, 91, 170, 0.25);
     }
 
-    .btn-primary:hover {
-      background: var(--blue-dark);
-      transform: translateY(-2px);
-    }
+    .btn-primary:hover { background: var(--blue-dark); transform: translateY(-2px); }
 
     .btn-soft {
       background: #fff;
@@ -187,16 +174,13 @@
       border-color: var(--border);
     }
 
-    .btn-soft:hover {
-      border-color: var(--blue);
-      transform: translateY(-2px);
-    }
+    .btn-soft:hover { border-color: var(--blue); transform: translateY(-2px); }
 
     .hero-card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 30px;
-      padding: 26px;
+      padding: 24px;
       box-shadow: var(--shadow);
       position: relative;
       overflow: hidden;
@@ -212,54 +196,37 @@
       background: rgba(0, 174, 239, 0.16);
     }
 
-    .status {
+    .network-visual {
       position: relative;
-      display: grid;
-      gap: 14px;
-    }
-
-    .status-item {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      padding: 16px;
-      border-radius: 18px;
-      background: #f8fbff;
-      border: 1px solid #e7f0fa;
-    }
-
-    .icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 14px;
+      min-height: 362px;
       display: grid;
       place-items: center;
-      background: #e8f5ff;
-      color: var(--blue);
-      font-size: 22px;
-      flex: 0 0 auto;
+      background: linear-gradient(160deg, #f8fbff, #eaf6ff);
+      border-radius: 24px;
+      border: 1px solid #e1eef9;
+      overflow: hidden;
     }
 
-    .status-item strong {
-      display: block;
-      margin-bottom: 5px;
-      color: #101828;
+    .network-visual svg { width: 100%; height: 340px; display: block; }
+
+    .visual-caption {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      background: rgba(255,255,255,0.92);
+      border: 1px solid #e1eef9;
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 12px 26px rgba(16,24,40,.08);
     }
 
-    .status-item span {
-      color: var(--muted);
-      line-height: 1.45;
-      font-size: 14px;
-    }
+    .visual-caption strong { display: block; color: #0b2545; margin-bottom: 4px; }
+    .visual-caption span { color: var(--muted); font-size: 14px; line-height: 1.45; }
 
-    .section {
-      padding: 42px 0;
-    }
+    .section { padding: 42px 0; }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 26px;
-    }
+    .section-title { text-align: center; margin-bottom: 26px; }
 
     .section-title h2 {
       margin: 0;
@@ -270,40 +237,169 @@
 
     .section-title p {
       margin: 10px auto 0;
-      max-width: 720px;
+      max-width: 760px;
       color: var(--muted);
       line-height: 1.6;
     }
 
-    .services {
+    .service-visuals {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
 
-    .service-card {
+    .visual-service-card {
       background: #fff;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
+      border-radius: 28px;
+      overflow: hidden;
       box-shadow: 0 10px 28px rgba(16, 24, 40, 0.06);
+      transition: 0.22s ease;
     }
 
-    .service-card .icon {
-      margin-bottom: 12px;
+    .visual-service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+    .service-image {
+      height: 168px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #e8f5ff, #ffffff);
+      border-bottom: 1px solid #e7f0fa;
+      overflow: hidden;
     }
 
-    .service-card h3 {
+    .service-image svg { width: 100%; height: 168px; }
+
+    .service-body { padding: 18px; }
+
+    .service-body h3 {
       margin: 0 0 8px;
       font-size: 18px;
       color: #101828;
     }
 
-    .service-card p {
+    .service-body p {
       margin: 0;
       color: var(--muted);
       line-height: 1.55;
       font-size: 14px;
+    }
+
+    .pricing-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .price-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-card.featured {
+      border: 2px solid var(--cyan);
+      transform: translateY(-8px);
+    }
+
+    .price-ribbon {
+      position: absolute;
+      top: 16px;
+      right: -38px;
+      transform: rotate(35deg);
+      background: var(--orange);
+      color: #fff;
+      font-weight: 900;
+      font-size: 12px;
+      padding: 7px 42px;
+    }
+
+    .price-card .combo-name {
+      display: inline-flex;
+      align-self: flex-start;
+      color: var(--blue);
+      background: #e8f5ff;
+      font-size: 13px;
+      font-weight: 900;
+      border-radius: 999px;
+      padding: 7px 11px;
+      margin-bottom: 14px;
+    }
+
+    .price-card h3 {
+      margin: 0 0 10px;
+      color: #0b2545;
+      font-size: 26px;
+      letter-spacing: -0.5px;
+    }
+
+    .price {
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+
+    .price strong {
+      font-size: 46px;
+      color: var(--blue);
+      letter-spacing: -1.5px;
+      line-height: 0.95;
+    }
+
+    .price span { color: var(--muted); font-weight: 800; padding-bottom: 5px; }
+
+    .features {
+      margin: 0 0 18px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      color: #475467;
+      line-height: 1.45;
+      flex: 1;
+    }
+
+    .features li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .features li::before {
+      content: "✓";
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #dcfae6;
+      color: #079455;
+      font-weight: 900;
+      flex: 0 0 auto;
+      font-size: 13px;
+    }
+
+    .price-card .btn { width: 100%; }
+
+    .note {
+      margin: 16px auto 0;
+      max-width: 900px;
+      color: #667085;
+      font-size: 14px;
+      line-height: 1.55;
+      text-align: center;
+      background: #fff;
+      border: 1px dashed #bdd7ee;
+      padding: 14px 16px;
+      border-radius: 18px;
     }
 
     .areas {
@@ -334,7 +430,7 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       opacity: 0.86;
-      font-weight: 800;
+      font-weight: 900;
     }
 
     .area-head h3 {
@@ -424,18 +520,9 @@
       box-shadow: 0 12px 30px rgba(16, 24, 40, 0.06);
     }
 
-    .guide-box h3 {
-      margin: 0 0 12px;
-      color: #0b2545;
-      font-size: 24px;
-    }
+    .guide-box h3 { margin: 0 0 12px; color: #0b2545; font-size: 24px; }
 
-    .guide-box ul {
-      margin: 0;
-      padding-left: 20px;
-      color: #475467;
-      line-height: 1.75;
-    }
+    .guide-box ul { margin: 0; padding-left: 20px; color: #475467; line-height: 1.75; }
 
     .cta {
       margin-top: 32px;
@@ -450,23 +537,9 @@
       box-shadow: 0 22px 46px rgba(0, 63, 125, 0.25);
     }
 
-    .cta h2 {
-      margin: 0 0 8px;
-      font-size: clamp(25px, 4vw, 38px);
-      letter-spacing: -1px;
-    }
-
-    .cta p {
-      margin: 0;
-      opacity: 0.9;
-      line-height: 1.55;
-    }
-
-    .cta .btn {
-      background: #fff;
-      color: var(--blue);
-      min-width: 190px;
-    }
+    .cta h2 { margin: 0 0 8px; font-size: clamp(25px, 4vw, 38px); letter-spacing: -1px; }
+    .cta p { margin: 0; opacity: 0.9; line-height: 1.55; }
+    .cta .btn { background: #fff; color: var(--blue); min-width: 190px; }
 
     footer {
       margin-top: 50px;
@@ -499,60 +572,25 @@
       box-shadow: 0 14px 28px rgba(16, 24, 40, 0.22);
     }
 
-    .floating-call .phone-float {
-      background: var(--green);
-    }
+    .floating-call .phone-float { background: var(--green); }
+    .floating-call .zalo-float { background: var(--blue); font-size: 15px; font-weight: 900; }
 
-    .floating-call .zalo-float {
-      background: var(--blue);
-      font-size: 15px;
-      font-weight: 900;
-    }
-
-    @media (max-width: 1000px) {
-      .hero-grid,
-      .guide {
-        grid-template-columns: 1fr;
-      }
-
-      .services,
-      .areas {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .nav-links {
-        display: none;
-      }
+    @media (max-width: 1060px) {
+      .hero-grid, .guide { grid-template-columns: 1fr; }
+      .service-visuals, .areas { grid-template-columns: repeat(2, 1fr); }
+      .pricing-wrap { grid-template-columns: 1fr; }
+      .price-card.featured { transform: none; }
+      .nav-links { display: none; }
     }
 
     @media (max-width: 620px) {
-      .topbar .container,
-      .cta {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .hero {
-        padding-top: 42px;
-      }
-
-      .services,
-      .areas {
-        grid-template-columns: 1fr;
-      }
-
-      .area-head {
-        min-height: auto;
-      }
-
-      .person-actions {
-        grid-template-columns: 1fr;
-      }
-
-      .cta {
-        padding: 24px;
-        border-radius: 24px;
-      }
+      .topbar .container, .cta { flex-direction: column; align-items: flex-start; }
+      .hero { padding-top: 42px; }
+      .service-visuals, .areas { grid-template-columns: 1fr; }
+      .area-head { min-height: auto; }
+      .person-actions { grid-template-columns: 1fr; }
+      .cta { padding: 24px; border-radius: 24px; }
+      .price strong { font-size: 40px; }
     }
   </style>
 </head>
@@ -560,7 +598,7 @@
   <div class="topbar">
     <div class="container">
       <span>VNPT địa bàn Quảng Lập - hỗ trợ cung cấp dịch vụ và sửa chữa kỹ thuật</span>
-      <span>Phục vụ các khu vực: Proh · Ka Đô · Ka Đơn · Quảng Lập</span>
+      <span>Proh · Ka Đô · Ka Đơn · Quảng Lập</span>
     </div>
   </div>
 
@@ -572,6 +610,7 @@
       </a>
       <nav class="nav-links">
         <a href="#dichvu">Dịch vụ</a>
+        <a href="#goicuoc">Gói cước</a>
         <a href="#khuvuc">Khu vực</a>
         <a href="#huongdan">Hướng dẫn</a>
         <a href="#lienhe">Liên hệ</a>
@@ -583,41 +622,59 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="badge">📡 Cung cấp & sửa chữa kỹ thuật VNPT</div>
-          <h1>Liên hệ đúng người phụ trách theo từng khu vực</h1>
+          <div class="badge">📡 Băng rộng cố định · MyTV · Camera · WiFi Mesh</div>
+          <h1>Cung cấp dịch vụ và sửa chữa kỹ thuật VNPT Quảng Lập</h1>
           <p>
-            Trang hỗ trợ khách hàng tại địa bàn Quảng Lập khi cần lắp đặt Internet, truyền hình,
-            camera, sim di động hoặc báo hỏng dịch vụ VNPT. Chọn khu vực của bạn để gọi trực tiếp
-            cho nhân viên Kỹ thuật hoặc Kinh doanh phụ trách.
+            Website hỗ trợ khách hàng tại địa bàn Quảng Lập khi cần lắp đặt Internet, truyền hình MyTV,
+            camera, Mesh WiFi hoặc báo hỏng dịch vụ VNPT. Chọn đúng khu vực để gọi trực tiếp nhân viên
+            Kỹ thuật hoặc Kinh doanh phụ trách.
           </p>
           <div class="actions">
-            <a class="btn btn-primary" href="#khuvuc">Chọn khu vực ngay</a>
-            <a class="btn btn-soft" href="#huongdan">Xem cách liên hệ</a>
+            <a class="btn btn-primary" href="#goicuoc">Xem gói cước & combo</a>
+            <a class="btn btn-soft" href="#khuvuc">Chọn khu vực liên hệ</a>
           </div>
         </div>
 
-        <aside class="hero-card" aria-label="Thông tin hỗ trợ">
-          <div class="status">
-            <div class="status-item">
-              <span class="icon">⚡</span>
-              <div>
-                <strong>Hỗ trợ nhanh theo địa bàn</strong>
-                <span>Mỗi khu vực có số điện thoại Kỹ thuật và Kinh doanh riêng để khách hàng liên hệ thuận tiện.</span>
-              </div>
-            </div>
-            <div class="status-item">
-              <span class="icon">🛠️</span>
-              <div>
-                <strong>Sửa chữa & xử lý sự cố</strong>
-                <span>Hỗ trợ báo mất mạng, mạng chậm, lỗi WiFi, lỗi truyền hình, camera và các dịch vụ liên quan.</span>
-              </div>
-            </div>
-            <div class="status-item">
-              <span class="icon">📞</span>
-              <div>
-                <strong>Bấm là gọi được</strong>
-                <span>Website tối ưu cho điện thoại, khách hàng chỉ cần bấm nút Gọi hoặc Zalo.</span>
-              </div>
+        <aside class="hero-card" aria-label="Mô hình dịch vụ VNPT">
+          <div class="network-visual">
+            <svg viewBox="0 0 520 340" role="img" aria-label="Minh họa dịch vụ VNPT">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#005baa" />
+                  <stop offset="100%" stop-color="#00aeef" />
+                </linearGradient>
+                <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#12b76a" />
+                  <stop offset="100%" stop-color="#8ee6b5" />
+                </linearGradient>
+              </defs>
+              <circle cx="260" cy="122" r="78" fill="url(#g1)" opacity="0.15" />
+              <circle cx="260" cy="122" r="48" fill="url(#g1)" opacity="0.25" />
+              <path d="M120 230 C185 160, 330 160, 400 230" fill="none" stroke="#005baa" stroke-width="8" stroke-linecap="round" opacity="0.22"/>
+              <path d="M150 212 C205 168, 315 168, 370 212" fill="none" stroke="#00aeef" stroke-width="8" stroke-linecap="round" opacity="0.45"/>
+              <path d="M184 194 C222 172, 298 172, 336 194" fill="none" stroke="#005baa" stroke-width="8" stroke-linecap="round" opacity="0.72"/>
+              <rect x="220" y="78" width="80" height="92" rx="20" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
+              <circle cx="260" cy="114" r="19" fill="url(#g1)" />
+              <rect x="248" y="145" width="24" height="8" rx="4" fill="#bdd7ee" />
+              <rect x="50" y="164" width="112" height="76" rx="16" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
+              <rect x="66" y="182" width="80" height="42" rx="8" fill="#e8f5ff" />
+              <circle cx="106" cy="203" r="17" fill="#005baa" opacity="0.9" />
+              <path d="M98 203 l8 8 l16 -18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              <rect x="354" y="157" width="116" height="84" rx="16" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
+              <rect x="372" y="176" width="80" height="44" rx="8" fill="#e8f5ff" />
+              <polygon points="404,188 404,210 424,199" fill="#00aeef" />
+              <rect x="210" y="226" width="100" height="50" rx="15" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
+              <circle cx="232" cy="251" r="8" fill="#12b76a" />
+              <circle cx="260" cy="251" r="8" fill="#00aeef" />
+              <circle cx="288" cy="251" r="8" fill="#f79009" />
+              <path d="M82 142 C120 95, 181 70, 235 72" fill="none" stroke="#00aeef" stroke-width="4" stroke-dasharray="8 8" opacity="0.65" />
+              <path d="M438 143 C400 95, 339 70, 285 72" fill="none" stroke="#00aeef" stroke-width="4" stroke-dasharray="8 8" opacity="0.65" />
+              <circle cx="83" cy="142" r="9" fill="url(#g2)" />
+              <circle cx="438" cy="143" r="9" fill="url(#g2)" />
+            </svg>
+            <div class="visual-caption">
+              <strong>1 đường truyền - nhiều dịch vụ</strong>
+              <span>Internet cáp quang kết hợp MyTV, Camera và Mesh WiFi cho gia đình, cửa hàng, cơ quan.</span>
             </div>
           </div>
         </aside>
@@ -627,31 +684,142 @@
     <section id="dichvu" class="section">
       <div class="container">
         <div class="section-title">
-          <h2>Dịch vụ hỗ trợ</h2>
-          <p>Cung cấp thông tin liên hệ để khách hàng đăng ký mới, nâng cấp gói cước và báo sửa chữa kỹ thuật.</p>
+          <h2>Dịch vụ băng rộng cố định</h2>
+          <p>Các nhóm dịch vụ được minh họa trực quan để khách hàng dễ hiểu và chọn đúng nhu cầu.</p>
         </div>
 
-        <div class="services">
-          <article class="service-card">
-            <span class="icon">🌐</span>
-            <h3>Internet cáp quang</h3>
-            <p>Lắp đặt mới, tư vấn gói cước, nâng cấp tốc độ và kiểm tra chất lượng đường truyền.</p>
+        <div class="service-visuals">
+          <article class="visual-service-card">
+            <div class="service-image">
+              <svg viewBox="0 0 320 180" role="img" aria-label="Internet cáp quang">
+                <rect width="320" height="180" fill="#e8f5ff" />
+                <circle cx="160" cy="68" r="50" fill="#00aeef" opacity="0.18" />
+                <path d="M80 120 C120 80, 200 80, 240 120" fill="none" stroke="#005baa" stroke-width="12" stroke-linecap="round" opacity="0.2" />
+                <path d="M105 106 C135 84, 185 84, 215 106" fill="none" stroke="#005baa" stroke-width="12" stroke-linecap="round" opacity="0.45" />
+                <path d="M130 93 C148 82, 172 82, 190 93" fill="none" stroke="#005baa" stroke-width="12" stroke-linecap="round" opacity="0.85" />
+                <rect x="112" y="126" width="96" height="32" rx="12" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
+                <circle cx="138" cy="142" r="5" fill="#12b76a" />
+                <circle cx="160" cy="142" r="5" fill="#00aeef" />
+                <circle cx="182" cy="142" r="5" fill="#f79009" />
+              </svg>
+            </div>
+            <div class="service-body">
+              <h3>Internet cáp quang</h3>
+              <p>Lắp đặt mới, nâng cấp tốc độ, kiểm tra đường truyền, xử lý mạng chậm hoặc mất mạng.</p>
+            </div>
           </article>
-          <article class="service-card">
-            <span class="icon">📺</span>
-            <h3>Truyền hình MyTV</h3>
-            <p>Hỗ trợ đăng ký, cài đặt thiết bị, xử lý lỗi tín hiệu và tư vấn combo gia đình.</p>
+
+          <article class="visual-service-card">
+            <div class="service-image">
+              <svg viewBox="0 0 320 180" role="img" aria-label="Truyền hình MyTV">
+                <rect width="320" height="180" fill="#f2f4ff" />
+                <rect x="58" y="38" width="204" height="108" rx="18" fill="#fff" stroke="#c8d5ff" stroke-width="4" />
+                <rect x="76" y="56" width="168" height="72" rx="10" fill="#005baa" />
+                <polygon points="146,75 146,110 178,92" fill="#fff" />
+                <rect x="126" y="150" width="68" height="8" rx="4" fill="#7a5af8" opacity="0.5" />
+                <circle cx="74" cy="50" r="16" fill="#00aeef" opacity="0.25" />
+                <circle cx="250" cy="132" r="22" fill="#f79009" opacity="0.22" />
+              </svg>
+            </div>
+            <div class="service-body">
+              <h3>Truyền hình MyTV</h3>
+              <p>Xem truyền hình, phim, giải trí gia đình; hỗ trợ cài đặt thiết bị và xử lý lỗi tín hiệu.</p>
+            </div>
           </article>
-          <article class="service-card">
-            <span class="icon">🎥</span>
-            <h3>Camera & WiFi Mesh</h3>
-            <p>Tư vấn giải pháp camera, mở rộng vùng phủ WiFi và xử lý điểm yếu sóng trong nhà.</p>
+
+          <article class="visual-service-card">
+            <div class="service-image">
+              <svg viewBox="0 0 320 180" role="img" aria-label="Camera an ninh">
+                <rect width="320" height="180" fill="#eefbf4" />
+                <rect x="84" y="54" width="130" height="56" rx="18" fill="#fff" stroke="#b7ebca" stroke-width="4" />
+                <circle cx="154" cy="82" r="22" fill="#12b76a" />
+                <circle cx="154" cy="82" r="10" fill="#0b5" opacity="0.55" />
+                <rect x="204" y="74" width="38" height="18" rx="8" fill="#12b76a" />
+                <path d="M132 112 L112 146" stroke="#12b76a" stroke-width="10" stroke-linecap="round" />
+                <rect x="84" y="142" width="62" height="12" rx="6" fill="#12b76a" opacity="0.75" />
+                <path d="M250 52 C270 72, 270 92, 250 112" fill="none" stroke="#12b76a" stroke-width="7" stroke-linecap="round" opacity="0.45" />
+                <path d="M266 42 C292 70, 292 96, 266 124" fill="none" stroke="#12b76a" stroke-width="7" stroke-linecap="round" opacity="0.25" />
+              </svg>
+            </div>
+            <div class="service-body">
+              <h3>Camera</h3>
+              <p>Giám sát gia đình, cửa hàng, kho bãi; hỗ trợ tư vấn vị trí lắp và kết nối xem từ xa.</p>
+            </div>
           </article>
-          <article class="service-card">
-            <span class="icon">📱</span>
-            <h3>Di động Vinaphone</h3>
-            <p>Hỗ trợ sim số, gói data, gói thoại và các chương trình ưu đãi phù hợp nhu cầu.</p>
+
+          <article class="visual-service-card">
+            <div class="service-image">
+              <svg viewBox="0 0 320 180" role="img" aria-label="Mesh WiFi">
+                <rect width="320" height="180" fill="#fff7ed" />
+                <circle cx="84" cy="92" r="34" fill="#f79009" opacity="0.18" />
+                <circle cx="236" cy="92" r="34" fill="#f79009" opacity="0.18" />
+                <circle cx="160" cy="88" r="42" fill="#f79009" opacity="0.16" />
+                <path d="M86 92 C120 58, 200 58, 234 92" fill="none" stroke="#f79009" stroke-width="6" stroke-dasharray="8 8" opacity="0.7" />
+                <rect x="60" y="108" width="48" height="42" rx="14" fill="#fff" stroke="#fbc27a" stroke-width="4" />
+                <rect x="136" y="106" width="48" height="44" rx="14" fill="#fff" stroke="#fbc27a" stroke-width="4" />
+                <rect x="212" y="108" width="48" height="42" rx="14" fill="#fff" stroke="#fbc27a" stroke-width="4" />
+                <circle cx="84" cy="129" r="6" fill="#f79009" />
+                <circle cx="160" cy="128" r="6" fill="#f79009" />
+                <circle cx="236" cy="129" r="6" fill="#f79009" />
+              </svg>
+            </div>
+            <div class="service-body">
+              <h3>Mesh WiFi</h3>
+              <p>Mở rộng vùng phủ sóng, giảm điểm yếu WiFi, phù hợp nhà nhiều tầng hoặc diện tích rộng.</p>
+            </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="goicuoc" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Gói cước & combo nổi bật</h2>
+          <p>Bảng giá hiển thị dạng thẻ để khách hàng dễ so sánh và bấm liên hệ tư vấn nhanh.</p>
+        </div>
+
+        <div class="pricing-wrap">
+          <article class="price-card">
+            <span class="combo-name">Combo cơ bản</span>
+            <h3>Internet + Camera</h3>
+            <div class="price"><strong>200K</strong><span>/tháng</span></div>
+            <ul class="features">
+              <li>Phù hợp hộ gia đình cần mạng ổn định và camera giám sát.</li>
+              <li>Tư vấn lắp đặt theo hạ tầng từng khu vực.</li>
+              <li>Hỗ trợ kỹ thuật theo địa bàn Quảng Lập.</li>
+            </ul>
+            <a class="btn btn-primary" href="#khuvuc">Liên hệ đăng ký</a>
+          </article>
+
+          <article class="price-card featured">
+            <div class="price-ribbon">Nổi bật</div>
+            <span class="combo-name">Combo giải trí</span>
+            <h3>Internet + Camera + MyTV</h3>
+            <div class="price"><strong>220K</strong><span>/tháng</span></div>
+            <ul class="features">
+              <li>Kết hợp Internet, Camera và truyền hình MyTV cho gia đình.</li>
+              <li>Tiết kiệm hơn khi dùng chung nhiều dịch vụ VNPT.</li>
+              <li>Phù hợp nhà ở, phòng trọ, quán nhỏ, hộ kinh doanh.</li>
+            </ul>
+            <a class="btn btn-primary" href="#khuvuc">Tư vấn combo này</a>
+          </article>
+
+          <article class="price-card">
+            <span class="combo-name">Combo phủ sóng mạnh</span>
+            <h3>Internet + Camera + MyTV + Mesh WiFi</h3>
+            <div class="price"><strong>235K</strong><span>/tháng</span></div>
+            <ul class="features">
+              <li>Thêm Mesh WiFi giúp mở rộng vùng phủ sóng trong nhà.</li>
+              <li>Phù hợp nhà nhiều phòng, nhiều tầng hoặc khu vực sóng yếu.</li>
+              <li>Trải nghiệm đầy đủ Internet, giải trí và giám sát.</li>
+            </ul>
+            <a class="btn btn-primary" href="#khuvuc">Chọn gói cao nhất</a>
+          </article>
+        </div>
+
+        <div class="note">
+          Lưu ý: Giá gói cước/combo trên dùng để giới thiệu nhanh cho khách hàng và có thể thay đổi theo khu vực, thời điểm, hạ tầng và chương trình khuyến mãi. Khách hàng nên liên hệ nhân viên Kinh doanh phụ trách khu vực để được kiểm tra và báo chính xác.
         </div>
       </div>
     </section>
@@ -812,7 +980,7 @@
   <footer>
     <div class="container">
       <strong>VNPT Quảng Lập</strong><br />
-      Trang thông tin liên hệ cung cấp dịch vụ và sửa chữa kỹ thuật theo khu vực.
+      Trang thông tin liên hệ cung cấp dịch vụ, combo băng rộng cố định và sửa chữa kỹ thuật theo khu vực.
     </div>
   </footer>
 </body>
