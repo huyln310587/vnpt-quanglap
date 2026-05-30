@@ -1,12 +1,12 @@
-# Website VNPT Quảng Lập - Đổi Zalo của Thủy
+# Website VNPT Quảng Lập - Đổi chức danh nhân viên
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Nhân viên kinh doanh Thủy:
-  - Số gọi điện vẫn giữ: 0848336125
-  - Nút Zalo đổi sang: 0971336125
+- Đổi "Kỹ thuật" thành "Kỹ Thuật Địa Bàn".
+- Đổi "Kinh doanh" thành "Kinh Doanh Địa Bàn".
+- Giữ nguyên số điện thoại, Zalo, hình ảnh nhân viên và các nội dung khác.
 
 ## Cách cập nhật lên Vercel
 
