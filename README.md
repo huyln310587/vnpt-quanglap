@@ -1,13 +1,12 @@
-# Website VNPT Quảng Lập - Bỏ ghi chú và tiêu đề quảng bá
+# Website VNPT Quảng Lập - Thêm ảnh Thủy và Xuân
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Xóa khung ghi chú về giá gói cước/combo.
-- Xóa tiêu đề "Hình ảnh quảng bá dịch vụ VNPT" và dòng mô tả bên dưới.
-- Giữ nguyên 2 ảnh quảng bá MyTV World Cup 2026 và VNPT Home.
-- Giữ nguyên ảnh nhân viên kỹ thuật, thiết bị, video và thông tin liên hệ.
+- Thêm ảnh nhân viên kinh doanh Thủy cho khu vực Ka Đơn.
+- Thêm ảnh nhân viên kinh doanh Xuân cho khu vực Quảng Lập và Proh.
+- Giữ nguyên ảnh nhân viên kỹ thuật, thiết bị VNPT, video và ảnh quảng bá.
 
 ## Cách cập nhật lên Vercel
 
