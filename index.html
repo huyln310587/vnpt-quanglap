@@ -592,7 +592,72 @@
       .cta { padding: 24px; border-radius: 24px; }
       .price strong { font-size: 40px; }
     }
-  </style>
+  
+    .video-section-wrap {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .video-box {
+      position: relative;
+      width: 100%;
+      min-height: 360px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 18px 46px rgba(0, 69, 124, 0.18);
+      border: 1px solid var(--border);
+    }
+
+    .video-box iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-info-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 26px;
+      box-shadow: 0 12px 30px rgba(16, 24, 40, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .video-info-card h3 {
+      margin: 0 0 12px;
+      color: #0b2545;
+      font-size: 26px;
+      letter-spacing: -0.6px;
+    }
+
+    .video-info-card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .video-check-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .video-check-list span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #344054;
+      font-weight: 700;
+    }
+
+</style>
 </head>
 <body>
   <div class="topbar">
@@ -610,6 +675,7 @@
       </a>
       <nav class="nav-links">
         <a href="#dichvu">Dịch vụ</a>
+        <a href="#video">Video</a>
         <a href="#goicuoc">Gói cước</a>
         <a href="#khuvuc">Khu vực</a>
         <a href="#huongdan">Hướng dẫn</a>
@@ -771,6 +837,40 @@
         </div>
       </div>
     </section>
+
+    
+    <section id="video" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Video giới thiệu dịch vụ VNPT</h2>
+          <p>Khách hàng có thể xem video trực tiếp trên website để hiểu rõ hơn về dịch vụ băng rộng cố định, Internet, MyTV, Camera và các giải pháp kết nối của VNPT.</p>
+        </div>
+
+        <div class="video-section-wrap">
+          <div class="video-box">
+            <iframe
+              src="https://www.youtube.com/embed/q-jZYR5SjdU"
+              title="Video giới thiệu dịch vụ VNPT"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-info-card">
+            <h3>Trực quan, dễ xem, dễ tư vấn</h3>
+            <p>Video giúp khách hàng hình dung nhanh lợi ích khi lắp đặt dịch vụ VNPT, đặc biệt khi tư vấn qua điện thoại hoặc gửi link website cho khách hàng.</p>
+            <div class="video-check-list">
+              <span>✅ Xem được trên điện thoại</span>
+              <span>✅ Không làm nặng website</span>
+              <span>✅ Phù hợp chạy trên Vercel</span>
+              <span>✅ Dễ thay video khác sau này</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section id="goicuoc" class="section">
       <div class="container">

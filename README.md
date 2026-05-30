@@ -25,3 +25,13 @@ Bộ web tĩnh chạy tốt trên Vercel.
 Mở file `index.html`, tìm các dòng `200K`, `220K`, `235K` rồi sửa thành giá mới.
 
 Lưu ý: Giá trên website nên xem là giá giới thiệu/tham khảo. Khi có chính sách mới, sửa trực tiếp trong file `index.html` rồi cập nhật lên GitHub.
+
+
+## Video đã gắn
+
+Video YouTube đã được nhúng vào website:
+
+- Link gốc: https://www.youtube.com/watch?v=q-jZYR5SjdU
+- Link nhúng: https://www.youtube.com/embed/q-jZYR5SjdU
+
+Muốn đổi video khác, mở `index.html`, tìm `q-jZYR5SjdU` rồi thay bằng mã video YouTube mới.
