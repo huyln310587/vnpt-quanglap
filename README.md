@@ -1,48 +1,19 @@
-# Website VNPT Quảng Lập - bản có gói cước và hình minh họa
+# Website VNPT Quảng Lập - Bản 1 file
 
-Bộ web tĩnh chạy tốt trên Vercel.
+Bản này chỉ cần upload file `index.html` lên GitHub.
 
-## Nội dung đã có
+## Cách cập nhật lên Vercel
 
-- Trang giới thiệu VNPT Quảng Lập.
-- 4 khu vực: Proh, Ka Đô, Ka Đơn, Quảng Lập.
-- Số Kỹ thuật và Kinh doanh từng khu vực.
-- Nút Gọi và Zalo.
-- Hình minh họa dịch vụ băng rộng cố định.
-- Bảng combo giá tham khảo: 200K, 220K, 235K.
+1. Giải nén file ZIP.
+2. Lấy file `index.html`.
+3. Vào GitHub repository đang dùng cho Vercel.
+4. Mở file `index.html` cũ.
+5. Bấm biểu tượng cây bút để sửa, hoặc xóa file cũ rồi upload file mới.
+6. Commit changes.
+7. Vercel sẽ tự deploy lại.
 
-## Cách đưa lên Vercel
+## Ghi chú
 
-1. Giải nén file ZIP này.
-2. Vào GitHub và tạo repository mới, hoặc mở repository web cũ.
-3. Upload/thay thế file `index.html`.
-4. Vào Vercel → Add New → Project nếu tạo mới, hoặc chờ Vercel tự deploy lại nếu dùng repo cũ.
-5. Framework Preset chọn `Other`.
-6. Bấm Deploy.
-
-## Cách sửa giá gói cước
-
-Mở file `index.html`, tìm các dòng `200K`, `220K`, `235K` rồi sửa thành giá mới.
-
-Lưu ý: Giá trên website nên xem là giá giới thiệu/tham khảo. Khi có chính sách mới, sửa trực tiếp trong file `index.html` rồi cập nhật lên GitHub.
-
-
-## Video đã gắn
-
-Video YouTube đã được nhúng vào website:
-
-- Link gốc: https://www.youtube.com/watch?v=q-jZYR5SjdU
-- Link nhúng: https://www.youtube.com/embed/q-jZYR5SjdU
-
-Muốn đổi video khác, mở `index.html`, tìm `q-jZYR5SjdU` rồi thay bằng mã video YouTube mới.
-
-## Poster gói cước
-
-Website đã nhúng poster bảng gói cước tại:
-
-- `assets/bang-goi-cuoc-vnpt.jpg`
-
-Muốn thay poster khác:
-1. Đổi ảnh mới cùng tên `bang-goi-cuoc-vnpt.jpg`.
-2. Upload lại lên GitHub.
-3. Vercel sẽ tự cập nhật website.
+- Poster gói cước đã được nhúng trực tiếp vào file `index.html`.
+- Không cần upload thư mục `assets`.
+- Video YouTube vẫn được nhúng trực tiếp trong web.
