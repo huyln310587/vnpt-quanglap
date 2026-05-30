@@ -1606,6 +1606,76 @@
   </header>
 
   <main id="home">
+<section id="gui-vi-tri" class="section">
+      <div class="container">
+        <div class="easy-location">
+          <div class="easy-location-head">
+            <span class="mini-label">📍 Gửi vị trí nhanh</span>
+            <h2>Khách hàng gửi vị trí qua Zalo</h2>
+            <p>
+              Chọn khu vực và người cần liên hệ, sau đó bấm một nút để lấy vị trí.
+              Website sẽ sao chép sẵn link Google Maps và mở Zalo đúng nhân viên phụ trách.
+            </p>
+          </div>
+
+          <div class="easy-location-card">
+            <div class="easy-form-grid">
+              <label class="easy-field">
+                <span>Khu vực</span>
+                <select id="areaSelect">
+                  <option value="kado">Ka Đô</option>
+                  <option value="quanglap">Quảng Lập</option>
+                  <option value="proh">Proh (Cũ)</option>
+                  <option value="kadon">Ka Đơn ( Cũ)</option>
+                </select>
+              </label>
+
+              <label class="easy-field">
+                <span>Liên hệ</span>
+                <select id="roleSelect">
+                  <option value="tech">Kỹ Thuật Địa Bàn</option>
+                  <option value="sales">Kinh Doanh Địa Bàn</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="selected-contact" id="selectedContact">
+              Người nhận: <strong>Kỹ Thuật Địa Bàn Mr.Hữu Thắng</strong> - 0914404080
+            </div>
+
+            <button class="easy-location-main-btn" id="sendLocationBtn" type="button">
+              📍 Tạo sẵn câu gửi tọa độ & mở Zalo
+            </button>
+
+            <div class="easy-location-actions">
+              <button class="easy-small-btn" id="copyOnlyBtn" type="button" disabled>📋 Sao chép lại vị trí</button>
+              <button class="easy-small-btn" id="mapOnlyBtn" type="button" disabled>🗺️ Mở bản đồ</button>
+            </div>
+
+            <div class="easy-location-result" id="easyLocationResult">
+              <div><strong>Vị trí đã tạo:</strong></div>
+              <a id="easyMapLink" href="#" target="_blank" rel="noopener">Chưa có vị trí</a>
+            </div>
+
+            <div class="location-message-template" id="locationMessageBox">
+              <strong>Câu gửi tọa độ đã tạo sẵn:</strong>
+              <textarea id="locationMessageText" readonly>Chưa có nội dung.</textarea>
+            </div>
+
+            <div class="easy-location-status" id="easyLocationStatus">
+              Khi trình duyệt hỏi quyền vị trí, khách hàng bấm <strong>Cho phép</strong>. Sau đó chỉ cần dán nội dung đã sao chép vào khung chat Zalo.
+            </div>
+
+            <div class="easy-location-steps">
+              <span>1️⃣ Chọn đúng khu vực khách hàng.</span>
+              <span>2️⃣ Chọn Kỹ thuật hoặc Kinh doanh.</span>
+              <span>3️⃣ Bấm <strong>Tạo sẵn câu gửi tọa độ & mở Zalo</strong>.</span>
+              <span>4️⃣ Nội dung đã được sao chép sẵn, khách chỉ cần dán vào Zalo và gửi.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 <section id="khuvuc" class="section top-priority-section">
       <div class="container">
         <div class="section-title">
@@ -1743,79 +1813,8 @@
             </div>
           </article>
         </div>
-
-    <section id="gui-vi-tri" class="section">
-      <div class="container">
-        <div class="easy-location">
-          <div class="easy-location-head">
-            <span class="mini-label">📍 Gửi vị trí nhanh</span>
-            <h2>Khách hàng gửi vị trí qua Zalo</h2>
-            <p>
-              Chọn khu vực và người cần liên hệ, sau đó bấm một nút để lấy vị trí.
-              Website sẽ sao chép sẵn link Google Maps và mở Zalo đúng nhân viên phụ trách.
-            </p>
-          </div>
-
-          <div class="easy-location-card">
-            <div class="easy-form-grid">
-              <label class="easy-field">
-                <span>Khu vực</span>
-                <select id="areaSelect">
-                  <option value="kado">Ka Đô</option>
-                  <option value="quanglap">Quảng Lập</option>
-                  <option value="proh">Proh (Cũ)</option>
-                  <option value="kadon">Ka Đơn ( Cũ)</option>
-                </select>
-              </label>
-
-              <label class="easy-field">
-                <span>Liên hệ</span>
-                <select id="roleSelect">
-                  <option value="tech">Kỹ Thuật Địa Bàn</option>
-                  <option value="sales">Kinh Doanh Địa Bàn</option>
-                </select>
-              </label>
-            </div>
-
-            <div class="selected-contact" id="selectedContact">
-              Người nhận: <strong>Kỹ Thuật Địa Bàn Mr.Hữu Thắng</strong> - 0914404080
-            </div>
-
-            <button class="easy-location-main-btn" id="sendLocationBtn" type="button">
-              📍 Tạo sẵn câu gửi tọa độ & mở Zalo
-            </button>
-
-            <div class="easy-location-actions">
-              <button class="easy-small-btn" id="copyOnlyBtn" type="button" disabled>📋 Sao chép lại vị trí</button>
-              <button class="easy-small-btn" id="mapOnlyBtn" type="button" disabled>🗺️ Mở bản đồ</button>
-            </div>
-
-            <div class="easy-location-result" id="easyLocationResult">
-              <div><strong>Vị trí đã tạo:</strong></div>
-              <a id="easyMapLink" href="#" target="_blank" rel="noopener">Chưa có vị trí</a>
-            </div>
-
-            <div class="location-message-template" id="locationMessageBox">
-              <strong>Câu gửi tọa độ đã tạo sẵn:</strong>
-              <textarea id="locationMessageText" readonly>Chưa có nội dung.</textarea>
-            </div>
-
-            <div class="easy-location-status" id="easyLocationStatus">
-              Khi trình duyệt hỏi quyền vị trí, khách hàng bấm <strong>Cho phép</strong>. Sau đó chỉ cần dán nội dung đã sao chép vào khung chat Zalo.
-            </div>
-
-            <div class="easy-location-steps">
-              <span>1️⃣ Chọn đúng khu vực khách hàng.</span>
-              <span>2️⃣ Chọn Kỹ thuật hoặc Kinh doanh.</span>
-              <span>3️⃣ Bấm <strong>Tạo sẵn câu gửi tọa độ & mở Zalo</strong>.</span>
-              <span>4️⃣ Nội dung đã được sao chép sẵn, khách chỉ cần dán vào Zalo và gửi.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
 </section>
+
 <div id="huongdan" class="guide" style="margin-top: 28px;">
           <div class="guide-box">
             <h3>Khách hàng cần sửa chữa</h3>

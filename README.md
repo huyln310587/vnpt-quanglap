@@ -101,3 +101,15 @@ Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, websi
 3. Tạo sẵn nội dung tin nhắn.
 4. Sao chép nội dung vào bộ nhớ tạm.
 5. Mở Zalo đúng nhân viên phụ trách để khách dán và gửi.
+
+
+## Đổi vị trí khu vực và gửi tọa độ
+
+- Đã đưa phần `4 khu vực nhân viên địa bàn` lên trên.
+- Đã chuyển phần `Gửi tọa độ hỗ trợ kỹ thuật` xuống ngay bên dưới 4 khu vực.
+
+
+## Đổi vị trí gửi tọa độ lên trên
+
+- Đã đưa phần `Gửi tọa độ hỗ trợ kỹ thuật` lên trên.
+- Phần `4 khu vực nhân viên địa bàn` nằm ngay bên dưới phần gửi tọa độ.
