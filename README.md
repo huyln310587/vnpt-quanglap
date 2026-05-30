@@ -1,16 +1,13 @@
-# Website VNPT Quảng Lập - Đổi ảnh kỹ thuật Thắng
+# Website VNPT Quảng Lập - Bỏ ghi chú và tiêu đề quảng bá
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Thay ảnh nhân viên kỹ thuật Thắng bằng ảnh mới.
-- Giữ nguyên các phần khác:
-  - 4 khu vực phụ trách
-  - Ảnh nhân viên kỹ thuật còn lại
-  - Ảnh thiết bị VNPT
-  - 2 ảnh quảng bá MyTV và VNPT Home
-  - Video và thông tin liên hệ
+- Xóa khung ghi chú về giá gói cước/combo.
+- Xóa tiêu đề "Hình ảnh quảng bá dịch vụ VNPT" và dòng mô tả bên dưới.
+- Giữ nguyên 2 ảnh quảng bá MyTV World Cup 2026 và VNPT Home.
+- Giữ nguyên ảnh nhân viên kỹ thuật, thiết bị, video và thông tin liên hệ.
 
 ## Cách cập nhật lên Vercel
 
