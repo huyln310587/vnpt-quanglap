@@ -1,12 +1,12 @@
-# Website VNPT Quảng Lập - Đổi tên khu vực cũ
+# Website VNPT Quảng Lập - Xóa menu Video bị trùng
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Đổi khu vực `Proh` thành `Proh (Cũ)`.
-- Đổi khu vực `Ka Đơn` thành `Ka Đơn ( Cũ)`.
-- Giữ nguyên ảnh nhân viên, số điện thoại, Zalo và các nội dung khác.
+- Xóa mục `Video` bị trùng trên thanh menu.
+- Chỉ giữ lại 1 mục `Video`.
+- Giữ nguyên các nội dung khác của website.
 
 ## Cách cập nhật lên Vercel
 
