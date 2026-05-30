@@ -1,13 +1,13 @@
-# Website VNPT Quảng Lập - Đổi tiêu đề đầu trang
+# Website VNPT Quảng Lập - Thay poster bằng 2 ảnh quảng bá
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Đổi tiêu đề phần đầu thành:
-  "Cung cấp dịch vụ và sửa chữa kỹ thuật VNPT Quảng Lập"
-- Giữ nguyên 4 khu vực phụ trách.
-- Giữ ảnh nhân viên kỹ thuật, video, thiết bị thực tế và poster gói cước.
+Đã thay phần poster gói cước cũ bằng 2 ảnh quảng bá:
+
+1. MyTV World Cup 2026
+2. VNPT Home - Internet tốc độ cao, truyền hình, camera giám sát
 
 ## Cách cập nhật lên Vercel
 
@@ -17,3 +17,8 @@ Bản này chỉ cần upload file `index.html` lên GitHub.
 4. Thay file `index.html` cũ bằng file mới.
 5. Bấm `Commit changes`.
 6. Vercel sẽ tự deploy lại.
+
+## Ghi chú
+
+- Ảnh quảng bá đã được nhúng trực tiếp trong file `index.html`.
+- Không cần upload thư mục `assets`.
