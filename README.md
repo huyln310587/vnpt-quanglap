@@ -1,25 +1,13 @@
-# Website VNPT Quảng Lập - Đổi tên nhân viên
+# Website VNPT Quảng Lập - Pano chữ chạy
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
-## Đã cập nhật tên nhân viên
+## Đã cập nhật
 
-- Thắng → Mr.Hữu Thắng
-- Tân → Mr.Đức Tân
-- Yên → Mr.Lê Yên
-- Giang → Mr.Trường Giang
-- Toàn → Mr.Tri Toàn
-- Xuân → Mr.Thanh Xuân
-- Thủy → Mrs.Thu Thủy
-
-## Giữ nguyên
-
-- Ảnh nhân viên
-- Chức danh
-- Số điện thoại
-- Link Zalo
-- Khu vực phụ trách
-- Nội dung dịch vụ, video và ảnh quảng bá
+- Đổi thanh xanh trên cùng thành pano chữ chạy.
+- Nội dung chính: `VNPT - Cuộc sống đích thực`.
+- Có thêm dòng chạy giới thiệu Internet, MyTV, Camera, Mesh WiFi và hỗ trợ kỹ thuật VNPT Quảng Lập.
+- Giữ nguyên các nội dung khác của website.
 
 ## Cách cập nhật lên Vercel
 
