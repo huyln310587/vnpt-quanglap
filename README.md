@@ -1,13 +1,13 @@
-# Website VNPT Quảng Lập - Pano chữ chạy
+# Website VNPT Quảng Lập - Popup poster MyTV
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Đổi thanh xanh trên cùng thành pano chữ chạy.
-- Nội dung chính: `VNPT - Cuộc sống đích thực`.
-- Có thêm dòng chạy giới thiệu Internet, MyTV, Camera, Mesh WiFi và hỗ trợ kỹ thuật VNPT Quảng Lập.
-- Giữ nguyên các nội dung khác của website.
+- Khi khách mở website, poster MyTV World Cup 2026 sẽ hiện lên giữa màn hình.
+- Poster tự tắt sau 5 giây.
+- Khách có thể bấm dấu × hoặc bấm ra ngoài poster để đóng sớm.
+- Giữ nguyên toàn bộ nội dung website hiện có.
 
 ## Cách cập nhật lên Vercel
 
