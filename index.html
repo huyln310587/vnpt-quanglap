@@ -791,6 +791,52 @@
       font-weight: 700;
     }
 
+
+    .hero-video-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-video-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 22px;
+      overflow: hidden;
+      background: #000;
+      border: 1px solid #d9e6f2;
+    }
+
+    .hero-video-box iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .hero-video-note {
+      padding: 14px 6px 2px;
+    }
+
+    .hero-video-note strong {
+      display: block;
+      color: #0b2545;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .hero-video-note span {
+      display: block;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
 </style>
 </head>
 <body>
@@ -809,7 +855,8 @@
       </a>
       <nav class="nav-links">
         <a href="#dichvu">Dịch vụ</a>
-        <a href="#video">Video</a>
+        <a href="#video-dau-trang">Video</a>
+        <a href="#video-dau-trang">Video</a>
         <a href="#poster-goicuoc">Poster gói cước</a>
         <a href="#goicuoc">Gói cước</a>
         <a href="#khuvuc">Khu vực</a>
@@ -836,49 +883,22 @@
           </div>
         </div>
 
-        <aside class="hero-card" aria-label="Mô hình dịch vụ VNPT">
-          <div class="network-visual">
-            <svg viewBox="0 0 520 340" role="img" aria-label="Minh họa dịch vụ VNPT">
-              <defs>
-                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#005baa" />
-                  <stop offset="100%" stop-color="#00aeef" />
-                </linearGradient>
-                <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#12b76a" />
-                  <stop offset="100%" stop-color="#8ee6b5" />
-                </linearGradient>
-              </defs>
-              <circle cx="260" cy="122" r="78" fill="url(#g1)" opacity="0.15" />
-              <circle cx="260" cy="122" r="48" fill="url(#g1)" opacity="0.25" />
-              <path d="M120 230 C185 160, 330 160, 400 230" fill="none" stroke="#005baa" stroke-width="8" stroke-linecap="round" opacity="0.22"/>
-              <path d="M150 212 C205 168, 315 168, 370 212" fill="none" stroke="#00aeef" stroke-width="8" stroke-linecap="round" opacity="0.45"/>
-              <path d="M184 194 C222 172, 298 172, 336 194" fill="none" stroke="#005baa" stroke-width="8" stroke-linecap="round" opacity="0.72"/>
-              <rect x="220" y="78" width="80" height="92" rx="20" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
-              <circle cx="260" cy="114" r="19" fill="url(#g1)" />
-              <rect x="248" y="145" width="24" height="8" rx="4" fill="#bdd7ee" />
-              <rect x="50" y="164" width="112" height="76" rx="16" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
-              <rect x="66" y="182" width="80" height="42" rx="8" fill="#e8f5ff" />
-              <circle cx="106" cy="203" r="17" fill="#005baa" opacity="0.9" />
-              <path d="M98 203 l8 8 l16 -18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-              <rect x="354" y="157" width="116" height="84" rx="16" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
-              <rect x="372" y="176" width="80" height="44" rx="8" fill="#e8f5ff" />
-              <polygon points="404,188 404,210 424,199" fill="#00aeef" />
-              <rect x="210" y="226" width="100" height="50" rx="15" fill="#fff" stroke="#bdd7ee" stroke-width="3" />
-              <circle cx="232" cy="251" r="8" fill="#12b76a" />
-              <circle cx="260" cy="251" r="8" fill="#00aeef" />
-              <circle cx="288" cy="251" r="8" fill="#f79009" />
-              <path d="M82 142 C120 95, 181 70, 235 72" fill="none" stroke="#00aeef" stroke-width="4" stroke-dasharray="8 8" opacity="0.65" />
-              <path d="M438 143 C400 95, 339 70, 285 72" fill="none" stroke="#00aeef" stroke-width="4" stroke-dasharray="8 8" opacity="0.65" />
-              <circle cx="83" cy="142" r="9" fill="url(#g2)" />
-              <circle cx="438" cy="143" r="9" fill="url(#g2)" />
-            </svg>
-            <div class="visual-caption">
-              <strong>1 đường truyền - nhiều dịch vụ</strong>
-              <span>Internet cáp quang kết hợp MyTV, Camera và Mesh WiFi cho gia đình, cửa hàng, cơ quan.</span>
-            </div>
+        <aside id="video-dau-trang" class="hero-video-card" aria-label="Video giới thiệu dịch vụ VNPT">
+          <div class="hero-video-box">
+            <iframe
+              src="https://www.youtube.com/embed/q-jZYR5SjdU"
+              title="Video giới thiệu dịch vụ Internet băng rộng VNPT"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="hero-video-note">
+            <strong>Dịch vụ Internet băng rộng của VNPT</strong>
+            <span>Xem nhanh video giới thiệu các dịch vụ Internet, MyTV, Camera và giải pháp kết nối dành cho hộ gia đình, cửa hàng, cơ quan.</span>
           </div>
         </aside>
+
       </div>
     </section>
 
@@ -972,41 +992,6 @@
         </div>
       </div>
     </section>
-
-    
-    <section id="video" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Video giới thiệu dịch vụ VNPT</h2>
-          <p>Khách hàng có thể xem video trực tiếp trên website để hiểu rõ hơn về dịch vụ băng rộng cố định, Internet, MyTV, Camera và các giải pháp kết nối của VNPT.</p>
-        </div>
-
-        <div class="video-section-wrap">
-          <div class="video-box">
-            <iframe
-              src="https://www.youtube.com/embed/q-jZYR5SjdU"
-              title="Video giới thiệu dịch vụ VNPT"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-
-          <div class="video-info-card">
-            <h3>Trực quan, dễ xem, dễ tư vấn</h3>
-            <p>Video giúp khách hàng hình dung nhanh lợi ích khi lắp đặt dịch vụ VNPT, đặc biệt khi tư vấn qua điện thoại hoặc gửi link website cho khách hàng.</p>
-            <div class="video-check-list">
-              <span>✅ Xem được trên điện thoại</span>
-              <span>✅ Không làm nặng website</span>
-              <span>✅ Phù hợp chạy trên Vercel</span>
-              <span>✅ Dễ thay video khác sau này</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
     <section id="goicuoc" class="section">
       <div class="container">
         <div class="section-title">

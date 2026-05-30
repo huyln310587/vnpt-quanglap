@@ -1,19 +1,23 @@
-# Website VNPT Quảng Lập - Bản 1 file
+# Website VNPT Quảng Lập - Bản video đầu trang
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
+
+## Nội dung đã chỉnh
+
+- Loại bỏ khung hình minh họa ở phần đầu trang.
+- Đưa video YouTube vào đúng vị trí khung hình đó.
+- Giữ poster gói cước được nhúng trực tiếp trong file `index.html`.
+- Không cần upload thư mục `assets`.
 
 ## Cách cập nhật lên Vercel
 
 1. Giải nén file ZIP.
 2. Lấy file `index.html`.
 3. Vào GitHub repository đang dùng cho Vercel.
-4. Mở file `index.html` cũ.
-5. Bấm biểu tượng cây bút để sửa, hoặc xóa file cũ rồi upload file mới.
-6. Commit changes.
-7. Vercel sẽ tự deploy lại.
+4. Thay file `index.html` cũ bằng file mới.
+5. Bấm `Commit changes`.
+6. Vercel sẽ tự deploy lại.
 
-## Ghi chú
+## Video đang dùng
 
-- Poster gói cước đã được nhúng trực tiếp vào file `index.html`.
-- Không cần upload thư mục `assets`.
-- Video YouTube vẫn được nhúng trực tiếp trong web.
+https://www.youtube.com/watch?v=q-jZYR5SjdU
