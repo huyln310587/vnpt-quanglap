@@ -1,12 +1,12 @@
-# Website VNPT Quảng Lập - Đổi chức danh nhân viên
+# Website VNPT Quảng Lập - Đổi tên khu vực cũ
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Đổi "Kỹ thuật" thành "Kỹ Thuật Địa Bàn".
-- Đổi "Kinh doanh" thành "Kinh Doanh Địa Bàn".
-- Giữ nguyên số điện thoại, Zalo, hình ảnh nhân viên và các nội dung khác.
+- Đổi khu vực `Proh` thành `Proh (Cũ)`.
+- Đổi khu vực `Ka Đơn` thành `Ka Đơn ( Cũ)`.
+- Giữ nguyên ảnh nhân viên, số điện thoại, Zalo và các nội dung khác.
 
 ## Cách cập nhật lên Vercel
 
