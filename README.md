@@ -101,13 +101,3 @@ Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, websi
 3. Tạo sẵn nội dung tin nhắn.
 4. Sao chép nội dung vào bộ nhớ tạm.
 5. Mở Zalo đúng nhân viên phụ trách để khách dán và gửi.
-
-
-## Gửi tọa độ dễ cho khách hàng
-
-Phần gửi vị trí đã có 2 lựa chọn:
-
-1. `Gửi vị trí không cần dán`: dùng bảng chia sẻ của điện thoại. Khách chọn Zalo và chọn nhân viên để gửi.
-2. `Mở Zalo đúng nhân viên địa bàn`: vẫn giữ cách mở đúng Zalo theo khu vực đã chọn.
-
-Mục tiêu là giảm thao tác copy/dán cho khách hàng, nhưng vẫn giữ được chức năng mở đúng Zalo nhân viên địa bàn.
