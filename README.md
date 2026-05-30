@@ -67,3 +67,9 @@ Hiện tại để chạy PWA trên điện thoại chỉ cần các file:
 - privacy.html
 
 File `assetlinks-template-for-later.json` chỉ dùng sau này khi làm TWA/CH Play.
+
+
+## Cập nhật vị trí mục gửi tọa độ
+
+- Đã chuyển mục `Gửi vị trí cho nhân viên phụ trách` xuống ngay bên dưới 4 ô khu vực liên hệ.
+- Khách hàng xem nhân viên phụ trách trước, sau đó mới dùng chức năng lấy vị trí và gửi Google Maps qua Zalo.
