@@ -1,12 +1,12 @@
-# Website VNPT Quảng Lập - Thêm ảnh Thủy và Xuân
+# Website VNPT Quảng Lập - Đổi Zalo của Thủy
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Thêm ảnh nhân viên kinh doanh Thủy cho khu vực Ka Đơn.
-- Thêm ảnh nhân viên kinh doanh Xuân cho khu vực Quảng Lập và Proh.
-- Giữ nguyên ảnh nhân viên kỹ thuật, thiết bị VNPT, video và ảnh quảng bá.
+- Nhân viên kinh doanh Thủy:
+  - Số gọi điện vẫn giữ: 0848336125
+  - Nút Zalo đổi sang: 0971336125
 
 ## Cách cập nhật lên Vercel
 
