@@ -79,3 +79,14 @@ File `assetlinks-template-for-later.json` chỉ dùng sau này khi làm TWA/CH P
 
 - Đã đưa mục `Gửi vị trí cho nhân viên phụ trách` lên ngay sau danh sách 4 khu vực.
 - Đã chuyển phần `Khách hàng cần sửa chữa / Khách hàng cần đăng ký mới / Cần hỗ trợ ngay` xuống dưới mục gửi vị trí.
+
+
+## Cập nhật phần gửi vị trí dễ dùng hơn
+
+Phần gửi vị trí đã được làm lại theo quy trình đơn giản:
+
+1. Chọn khu vực.
+2. Chọn Kỹ Thuật Địa Bàn hoặc Kinh Doanh Địa Bàn.
+3. Bấm `Lấy vị trí & mở Zalo`.
+4. Website tự sao chép link Google Maps và mở Zalo đúng nhân viên phụ trách.
+5. Khách hàng chỉ cần dán nội dung vào Zalo và gửi.
