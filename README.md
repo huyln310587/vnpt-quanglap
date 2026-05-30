@@ -90,3 +90,24 @@ Phần gửi vị trí đã được làm lại theo quy trình đơn giản:
 3. Bấm `Lấy vị trí & mở Zalo`.
 4. Website tự sao chép link Google Maps và mở Zalo đúng nhân viên phụ trách.
 5. Khách hàng chỉ cần dán nội dung vào Zalo và gửi.
+
+
+## Mẫu câu gửi tọa độ
+
+Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, website sẽ:
+
+1. Lấy tọa độ hiện tại.
+2. Tạo link Google Maps.
+3. Tạo sẵn nội dung tin nhắn.
+4. Sao chép nội dung vào bộ nhớ tạm.
+5. Mở Zalo đúng nhân viên phụ trách để khách dán và gửi.
+
+
+## Gửi tọa độ dễ cho khách hàng
+
+Phần gửi vị trí đã có 2 lựa chọn:
+
+1. `Gửi vị trí không cần dán`: dùng bảng chia sẻ của điện thoại. Khách chọn Zalo và chọn nhân viên để gửi.
+2. `Mở Zalo đúng nhân viên địa bàn`: vẫn giữ cách mở đúng Zalo theo khu vực đã chọn.
+
+Mục tiêu là giảm thao tác copy/dán cho khách hàng, nhưng vẫn giữ được chức năng mở đúng Zalo nhân viên địa bàn.

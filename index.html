@@ -1514,6 +1514,110 @@
       }
     }
 
+
+    .location-message-template {
+      display: none;
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid #cde9ff;
+      background: #f8fbff;
+      color: #0b2545;
+      line-height: 1.6;
+    }
+
+    .location-message-template.show {
+      display: block;
+    }
+
+    .location-message-template textarea {
+      width: 100%;
+      min-height: 118px;
+      margin-top: 8px;
+      border: 1px solid #cde2f5;
+      border-radius: 14px;
+      padding: 12px;
+      font: inherit;
+      color: #0b2545;
+      background: #fff;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+
+    .location-message-template strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+
+    .smart-location .open-zalo-direct-btn {
+      width: 100%;
+      margin-top: 12px;
+      border: 1px solid #cde9ff;
+      border-radius: 18px;
+      padding: 15px 18px;
+      background: #e8f5ff;
+      color: var(--blue);
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .smart-location .no-paste-btn {
+      background: linear-gradient(135deg, #12b76a, #039855);
+    }
+
+    .location-guide-box {
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      color: #05603a;
+      line-height: 1.6;
+      display: grid;
+      gap: 6px;
+    }
+
+    .location-guide-box strong {
+      color: #054f31;
+      font-size: 15px;
+    }
+
+    .location-guide-box span {
+      display: block;
+    }
+
+    .location-message-template {
+      display: none;
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid #cde9ff;
+      background: #f8fbff;
+      color: #0b2545;
+      line-height: 1.6;
+    }
+
+    .location-message-template.show {
+      display: block;
+    }
+
+    .location-message-template textarea {
+      width: 100%;
+      min-height: 118px;
+      margin-top: 8px;
+      border: 1px solid #cde2f5;
+      border-radius: 14px;
+      padding: 12px;
+      font: inherit;
+      color: #0b2545;
+      background: #fff;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+
 </style>
 
   <link rel="manifest" href="/manifest.webmanifest">
@@ -1711,13 +1815,13 @@
 
     <section id="gui-vi-tri" class="section">
       <div class="container">
-        <div class="easy-location">
+        <div class="easy-location smart-location">
           <div class="easy-location-head">
-            <span class="mini-label">📍 Gửi vị trí nhanh</span>
-            <h2>Khách hàng gửi vị trí qua Zalo</h2>
+            <span class="mini-label">📍 Gửi vị trí dễ dùng</span>
+            <h2>Gửi tọa độ hỗ trợ kỹ thuật</h2>
             <p>
-              Chọn khu vực và người cần liên hệ, sau đó bấm một nút để lấy vị trí.
-              Website sẽ sao chép sẵn link Google Maps và mở Zalo đúng nhân viên phụ trách.
+              Khách hàng chọn đúng khu vực và người cần liên hệ. Website sẽ tạo sẵn vị trí Google Maps.
+              Có thể gửi bằng bảng chia sẻ không cần dán, hoặc mở Zalo đúng nhân viên địa bàn.
             </p>
           </div>
 
@@ -1746,13 +1850,24 @@
               Người nhận: <strong>Kỹ Thuật Địa Bàn Mr.Hữu Thắng</strong> - 0914404080
             </div>
 
-            <button class="easy-location-main-btn" id="sendLocationBtn" type="button">
-              📍 Lấy vị trí & mở Zalo
+            <button class="easy-location-main-btn no-paste-btn" id="shareLocationBtn" type="button">
+              📤 Gửi vị trí không cần dán
+            </button>
+
+            <button class="open-zalo-direct-btn" id="openZaloLocationBtn" type="button">
+              💬 Mở Zalo đúng nhân viên địa bàn
             </button>
 
             <div class="easy-location-actions">
-              <button class="easy-small-btn" id="copyOnlyBtn" type="button" disabled>📋 Sao chép lại vị trí</button>
-              <button class="easy-small-btn" id="mapOnlyBtn" type="button" disabled>🗺️ Mở bản đồ</button>
+              <button class="easy-small-btn" id="openMapBtn" type="button" disabled>🗺️ Mở Google Maps</button>
+              <button class="easy-small-btn" id="copyMessageBtn" type="button" disabled>📋 Sao chép nếu cần</button>
+            </div>
+
+            <div class="location-guide-box">
+              <strong>Cách dễ nhất cho khách hàng:</strong>
+              <span>1️⃣ Bấm <b>Gửi vị trí không cần dán</b></span>
+              <span>2️⃣ Chọn <b>Zalo</b> trong bảng chia sẻ</span>
+              <span>3️⃣ Chọn đúng nhân viên theo tên/số điện thoại hiển thị bên trên rồi bấm gửi</span>
             </div>
 
             <div class="easy-location-result" id="easyLocationResult">
@@ -1760,15 +1875,13 @@
               <a id="easyMapLink" href="#" target="_blank" rel="noopener">Chưa có vị trí</a>
             </div>
 
-            <div class="easy-location-status" id="easyLocationStatus">
-              Khi trình duyệt hỏi quyền vị trí, khách hàng bấm <strong>Cho phép</strong>. Sau đó chỉ cần dán nội dung đã sao chép vào khung chat Zalo.
+            <div class="location-message-template" id="locationMessageBox">
+              <strong>Nội dung tin nhắn đã tạo sẵn:</strong>
+              <textarea id="locationMessageText" readonly>Chưa có nội dung.</textarea>
             </div>
 
-            <div class="easy-location-steps">
-              <span>1️⃣ Chọn đúng khu vực khách hàng.</span>
-              <span>2️⃣ Chọn Kỹ thuật hoặc Kinh doanh.</span>
-              <span>3️⃣ Bấm <strong>Lấy vị trí & mở Zalo</strong>.</span>
-              <span>4️⃣ Dán nội dung vị trí vào Zalo và gửi.</span>
+            <div class="easy-location-status" id="easyLocationStatus">
+              Khi trình duyệt hỏi quyền vị trí, khách hàng bấm <strong>Cho phép</strong>.
             </div>
           </div>
         </div>
@@ -2072,14 +2185,17 @@
       const areaSelect = document.getElementById("areaSelect");
       const roleSelect = document.getElementById("roleSelect");
       const selectedContact = document.getElementById("selectedContact");
-      const sendBtn = document.getElementById("sendLocationBtn");
-      const copyBtn = document.getElementById("copyOnlyBtn");
-      const mapBtn = document.getElementById("mapOnlyBtn");
+      const shareBtn = document.getElementById("shareLocationBtn");
+      const zaloBtn = document.getElementById("openZaloLocationBtn");
+      const mapBtn = document.getElementById("openMapBtn");
+      const copyBtn = document.getElementById("copyMessageBtn");
       const resultBox = document.getElementById("easyLocationResult");
       const mapLink = document.getElementById("easyMapLink");
+      const messageBox = document.getElementById("locationMessageBox");
+      const messageText = document.getElementById("locationMessageText");
       const statusBox = document.getElementById("easyLocationStatus");
 
-      if (!areaSelect || !roleSelect || !selectedContact || !sendBtn || !copyBtn || !mapBtn || !resultBox || !mapLink || !statusBox) return;
+      if (!areaSelect || !roleSelect || !selectedContact || !shareBtn || !zaloBtn || !mapBtn || !copyBtn || !resultBox || !mapLink || !statusBox) return;
 
       let currentMessage = "";
       let currentMapUrl = "";
@@ -2087,11 +2203,7 @@
       function getSelectedContact() {
         const area = areaSelect.value;
         const role = roleSelect.value;
-        return {
-          area,
-          role,
-          contact: contacts[area][role]
-        };
+        return { area, role, contact: contacts[area][role] };
       }
 
       function updateSelectedText() {
@@ -2104,71 +2216,53 @@
         statusBox.innerHTML = message;
       }
 
-      async function copyMessage() {
-        if (!currentMessage) return false;
-        try {
-          await navigator.clipboard.writeText(currentMessage);
-          return true;
-        } catch (error) {
-          return false;
-        }
+      function buildMessage(selected, mapUrl) {
+        return "Em cần hỗ trợ VNPT địa bàn " + areaNames[selected.area] + ".\n" +
+          "Em gửi tọa độ vị trí hiện tại để nhân viên hỗ trợ:\n" +
+          mapUrl + "\n\n" +
+          "Người nhận: " + selected.contact.label + "\n" +
+          "Số liên hệ: " + selected.contact.phone + "\n" +
+          "Nội dung cần hỗ trợ: Lắp đặt / sửa chữa dịch vụ VNPT.";
       }
 
-      function openZalo(phone) {
-        window.open("https://zalo.me/" + phone, "_blank", "noopener");
+      function updateResult(selected, mapUrl) {
+        currentMapUrl = mapUrl;
+        currentMessage = buildMessage(selected, mapUrl);
+        mapLink.href = currentMapUrl;
+        mapLink.textContent = currentMapUrl;
+        resultBox.classList.add("show");
+
+        if (messageText) messageText.value = currentMessage;
+        if (messageBox) messageBox.classList.add("show");
+
+        mapBtn.disabled = false;
+        copyBtn.disabled = false;
       }
 
-      function openMap() {
-        if (currentMapUrl) {
-          window.open(currentMapUrl, "_blank", "noopener");
-        }
-      }
-
-      areaSelect.addEventListener("change", updateSelectedText);
-      roleSelect.addEventListener("change", updateSelectedText);
-      updateSelectedText();
-
-      sendBtn.addEventListener("click", function () {
+      function getLocation(callback) {
         if (!navigator.geolocation) {
           setStatus("Thiết bị hoặc trình duyệt này chưa hỗ trợ lấy vị trí.");
           return;
         }
 
-        const selected = getSelectedContact();
-        sendBtn.disabled = true;
         setStatus("Đang lấy vị trí. Khi trình duyệt hỏi quyền, hãy bấm <strong>Cho phép</strong>.");
+        shareBtn.disabled = true;
+        zaloBtn.disabled = true;
 
         navigator.geolocation.getCurrentPosition(
-          async function (position) {
+          function (position) {
             const lat = position.coords.latitude.toFixed(6);
             const lng = position.coords.longitude.toFixed(6);
-            currentMapUrl = "https://www.google.com/maps?q=" + lat + "," + lng;
-
-            currentMessage =
-              "Tôi cần hỗ trợ VNPT địa bàn " + areaNames[selected.area] + ".\n" +
-              "Vị trí khách hàng: " + currentMapUrl + "\n" +
-              "Gửi tới: " + selected.contact.label + " - " + selected.contact.phone;
-
-            mapLink.href = currentMapUrl;
-            mapLink.textContent = currentMapUrl;
-            resultBox.classList.add("show");
-            copyBtn.disabled = false;
-            mapBtn.disabled = false;
-            sendBtn.disabled = false;
-
-            const copied = await copyMessage();
-            if (copied) {
-              setStatus("Đã lấy vị trí và sao chép nội dung. Zalo sẽ mở ra, khách hàng chỉ cần bấm giữ/dán rồi gửi.");
-            } else {
-              setStatus("Đã lấy vị trí. Hãy bấm <strong>Sao chép lại vị trí</strong>, sau đó dán vào Zalo.");
-            }
-
-            window.setTimeout(function () {
-              openZalo(selected.contact.zalo);
-            }, 350);
+            const mapUrl = "https://www.google.com/maps?q=" + lat + "," + lng;
+            const selected = getSelectedContact();
+            updateResult(selected, mapUrl);
+            shareBtn.disabled = false;
+            zaloBtn.disabled = false;
+            callback(selected);
           },
           function (error) {
-            sendBtn.disabled = false;
+            shareBtn.disabled = false;
+            zaloBtn.disabled = false;
             if (error.code === error.PERMISSION_DENIED) {
               setStatus("Khách hàng đã từ chối quyền vị trí. Hãy bật quyền vị trí trong trình duyệt rồi bấm lại.");
             } else if (error.code === error.POSITION_UNAVAILABLE) {
@@ -2179,24 +2273,71 @@
               setStatus("Có lỗi khi lấy vị trí. Vui lòng thử lại.");
             }
           },
-          {
-            enableHighAccuracy: true,
-            timeout: 15000,
-            maximumAge: 0
-          }
+          { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 }
         );
+      }
+
+      async function shareLocation() {
+        if (!currentMessage || !currentMapUrl) return;
+
+        if (navigator.share) {
+          try {
+            await navigator.share({
+              title: "Vị trí hỗ trợ VNPT địa bàn Quảng Lập",
+              text: currentMessage,
+              url: currentMapUrl
+            });
+            setStatus("✅ Đã mở bảng chia sẻ. Khách chọn Zalo, chọn đúng nhân viên theo tên/số điện thoại rồi gửi.");
+            return;
+          } catch (error) {
+            if (error && error.name === "AbortError") {
+              setStatus("Bạn đã đóng bảng chia sẻ. Có thể bấm lại để gửi.");
+              return;
+            }
+          }
+        }
+
+        // Fallback when Web Share is not available
+        setStatus("Thiết bị này chưa hỗ trợ chia sẻ trực tiếp. Web sẽ mở Zalo đúng nhân viên; nếu cần, dùng nút Sao chép.");
+        window.open("https://zalo.me/" + getSelectedContact().contact.zalo, "_blank", "noopener");
+      }
+
+      areaSelect.addEventListener("change", updateSelectedText);
+      roleSelect.addEventListener("change", updateSelectedText);
+      updateSelectedText();
+
+      shareBtn.addEventListener("click", function () {
+        getLocation(function () {
+          shareLocation();
+        });
+      });
+
+      zaloBtn.addEventListener("click", function () {
+        getLocation(function (selected) {
+          setStatus("✅ Đã tạo nội dung vị trí. Đang mở Zalo đúng nhân viên địa bàn. Nếu cần, dùng nút Sao chép để gửi thủ công.");
+          window.setTimeout(function () {
+            window.open("https://zalo.me/" + selected.contact.zalo, "_blank", "noopener");
+          }, 300);
+        });
       });
 
       copyBtn.addEventListener("click", async function () {
-        const copied = await copyMessage();
-        if (copied) {
-          setStatus("Đã sao chép lại vị trí. Hãy dán vào Zalo để gửi cho nhân viên phụ trách.");
-        } else {
-          setStatus("Không sao chép tự động được. Hãy bấm giữ vào link Google Maps để sao chép thủ công.");
+        if (!currentMessage) return;
+        try {
+          await navigator.clipboard.writeText(currentMessage);
+          setStatus("Đã sao chép nội dung vị trí. Có thể dán vào Zalo nếu cần.");
+        } catch (error) {
+          if (messageText) {
+            messageText.focus();
+            messageText.select();
+          }
+          setStatus("Không sao chép tự động được. Hãy bấm giữ vào ô nội dung để sao chép.");
         }
       });
 
-      mapBtn.addEventListener("click", openMap);
+      mapBtn.addEventListener("click", function () {
+        if (currentMapUrl) window.open(currentMapUrl, "_blank", "noopener");
+      });
     })();
   </script>
 
