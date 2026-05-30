@@ -35,3 +35,14 @@ Video YouTube đã được nhúng vào website:
 - Link nhúng: https://www.youtube.com/embed/q-jZYR5SjdU
 
 Muốn đổi video khác, mở `index.html`, tìm `q-jZYR5SjdU` rồi thay bằng mã video YouTube mới.
+
+## Poster gói cước
+
+Website đã nhúng poster bảng gói cước tại:
+
+- `assets/bang-goi-cuoc-vnpt.jpg`
+
+Muốn thay poster khác:
+1. Đổi ảnh mới cùng tên `bang-goi-cuoc-vnpt.jpg`.
+2. Upload lại lên GitHub.
+3. Vercel sẽ tự cập nhật website.
