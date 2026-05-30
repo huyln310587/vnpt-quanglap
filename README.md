@@ -1,12 +1,25 @@
-# Website VNPT Quảng Lập - Xóa menu Video bị trùng
+# Website VNPT Quảng Lập - Đổi tên nhân viên
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
-## Đã cập nhật
+## Đã cập nhật tên nhân viên
 
-- Xóa mục `Video` bị trùng trên thanh menu.
-- Chỉ giữ lại 1 mục `Video`.
-- Giữ nguyên các nội dung khác của website.
+- Thắng → Mr.Hữu Thắng
+- Tân → Mr.Đức Tân
+- Yên → Mr.Lê Yên
+- Giang → Mr.Trường Giang
+- Toàn → Mr.Tri Toàn
+- Xuân → Mr.Thanh Xuân
+- Thủy → Mrs.Thu Thủy
+
+## Giữ nguyên
+
+- Ảnh nhân viên
+- Chức danh
+- Số điện thoại
+- Link Zalo
+- Khu vực phụ trách
+- Nội dung dịch vụ, video và ảnh quảng bá
 
 ## Cách cập nhật lên Vercel
 
