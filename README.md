@@ -1,17 +1,69 @@
-# Website VNPT địa bàn Quảng Lập
+# VNPT địa bàn Quảng Lập - Bộ web PWA
 
-Bản này chỉ cần upload file `index.html` lên GitHub.
+Bộ này dùng để chạy website như ứng dụng trên điện thoại và chuẩn bị đóng gói thành app Android bằng TWA/Bubblewrap.
 
-## Đã cập nhật
+## File trong gói
 
-- Đổi toàn bộ chữ `VNPT Quảng Lập` thành `VNPT địa bàn Quảng Lập`.
-- Giữ nguyên giao diện, ảnh nhân viên, video, popup poster, số điện thoại và Zalo.
+- `index.html`: website chính.
+- `manifest.webmanifest`: khai báo PWA.
+- `sw.js`: service worker.
+- `icon-192.png`: icon PWA 192x192.
+- `icon-512.png`: icon PWA 512x512.
+- `offline.html`: trang mất kết nối.
+- `privacy.html`: chính sách quyền riêng tư.
+- `TWA-HUONG-DAN.md`: hướng dẫn đóng gói TWA.
+- `.well-known/assetlinks.template.json`: mẫu Digital Asset Links cho TWA.
 
-## Cách cập nhật lên Vercel
+## Cách upload lên GitHub/Vercel
 
-1. Giải nén file ZIP.
-2. Lấy file `index.html`.
-3. Vào GitHub repository đang kết nối với Vercel.
-4. Thay file `index.html` cũ bằng file mới.
-5. Bấm `Commit changes`.
-6. Vercel sẽ tự deploy lại.
+Upload toàn bộ các file và thư mục trong gói này lên repository GitHub đang kết nối Vercel.
+
+Sau khi Vercel deploy xong, kiểm tra các link:
+
+- https://www.vnpt-quanglap.vn/manifest.webmanifest
+- https://www.vnpt-quanglap.vn/sw.js
+- https://www.vnpt-quanglap.vn/privacy.html
+- https://www.vnpt-quanglap.vn/icon-512.png
+
+## Kiểm tra PWA trên điện thoại Android
+
+1. Mở Chrome trên điện thoại.
+2. Vào https://www.vnpt-quanglap.vn/
+3. Bấm menu dấu ba chấm.
+4. Chọn `Thêm vào màn hình chính` hoặc `Cài đặt ứng dụng`.
+5. Mở icon VNPT địa bàn Quảng Lập trên màn hình điện thoại.
+
+
+## Cập nhật icon
+
+- Đã đổi nội dung icon thành `QUANG LAP`
+- Thêm họa tiết hoa phượng rơi ở hai bên viền icon
+
+
+## Chức năng gửi vị trí
+
+Website đã thêm mục `Gửi vị trí hỗ trợ kỹ thuật`.
+
+Khách hàng có thể:
+- Bấm `Lấy vị trí hiện tại`.
+- Sao chép link Google Maps.
+- Gửi link qua Zalo cho nhân viên phụ trách khu vực.
+
+Chức năng này dùng Geolocation API của trình duyệt, cần khách hàng bấm cho phép quyền vị trí.
+
+
+## Bản không có thư mục .well-known
+
+Bản ZIP này đã bỏ thư mục `.well-known` để dễ upload lên GitHub bằng giao diện web.
+
+Hiện tại để chạy PWA trên điện thoại chỉ cần các file:
+
+- index.html
+- manifest.webmanifest
+- sw.js
+- icon-192.png
+- icon-512.png
+- offline.html
+- privacy.html
+
+File `assetlinks-template-for-later.json` chỉ dùng sau này khi làm TWA/CH Play.

@@ -1164,7 +1164,169 @@
       }
     }
 
+
+    .location-support {
+      background:
+        radial-gradient(circle at top left, rgba(0, 174, 239, 0.16), transparent 32%),
+        linear-gradient(135deg, #ffffff, #f7fbff);
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .location-info {
+      background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+      color: #fff;
+      border-radius: 26px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .location-info .mini-label {
+      display: inline-flex;
+      width: fit-content;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.22);
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .location-info h3 {
+      margin: 0 0 12px;
+      font-size: clamp(25px, 4vw, 38px);
+      letter-spacing: -0.8px;
+      line-height: 1.12;
+    }
+
+    .location-info p {
+      margin: 0;
+      line-height: 1.65;
+      opacity: 0.92;
+    }
+
+    .location-panel {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(16, 24, 40, 0.06);
+    }
+
+    .location-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .location-btn {
+      border: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-weight: 900;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+    .location-btn.primary {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(0, 91, 170, 0.22);
+    }
+
+    .location-btn.soft {
+      background: #e8f5ff;
+      color: var(--blue);
+      border: 1px solid #cde9ff;
+    }
+
+    .location-btn.green {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .location-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .location-result {
+      display: none;
+      background: #f8fbff;
+      border: 1px solid #e7f0fa;
+      border-radius: 18px;
+      padding: 16px;
+      color: #344054;
+      line-height: 1.65;
+      word-break: break-word;
+    }
+
+    .location-result.show {
+      display: block;
+    }
+
+    .location-result strong {
+      color: #0b2545;
+    }
+
+    .location-link {
+      color: var(--blue);
+      font-weight: 900;
+      text-decoration: underline;
+    }
+
+    .location-status {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .location-steps {
+      margin-top: 16px;
+      display: grid;
+      gap: 8px;
+      color: #475467;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .location-steps span {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
 </style>
+
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#005baa">
+  <meta name="application-name" content="VNPT địa bàn Quảng Lập">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="VNPT ĐB QL">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+
 </head>
 <body>
 
@@ -1201,6 +1363,7 @@
       <nav class="nav-links">
         <a href="#dichvu">Thiết bị</a>
         <a href="#video-dau-trang">Video</a>
+        <a href="#gui-vi-tri">Gửi vị trí</a>
         <a href="#poster-goicuoc">Quảng bá</a>
         <a href="#goicuoc">Gói cước</a>
         <a href="#khuvuc">Khu vực</a>
@@ -1378,6 +1541,49 @@
         </div>
       </div>
     </section>
+
+    <section id="gui-vi-tri" class="section">
+      <div class="container">
+        <div class="location-support">
+          <div class="location-grid">
+            <div class="location-info">
+              <span class="mini-label">📍 Hỗ trợ đến đúng vị trí</span>
+              <h3>Gửi vị trí cho nhân viên phụ trách</h3>
+              <p>
+                Khi cần lắp đặt hoặc sửa chữa kỹ thuật, khách hàng bấm lấy vị trí hiện tại,
+                sau đó gửi link Google Maps qua Zalo cho nhân viên địa bàn để được hỗ trợ nhanh hơn.
+              </p>
+            </div>
+
+            <div class="location-panel">
+              <div class="location-buttons">
+                <button class="location-btn primary" id="getLocationBtn" type="button">📍 Lấy vị trí hiện tại</button>
+                <button class="location-btn soft" id="copyLocationBtn" type="button" disabled>📋 Sao chép vị trí</button>
+                <button class="location-btn green" id="openMapBtn" type="button" disabled>🗺️ Mở Google Maps</button>
+              </div>
+
+              <div class="location-result" id="locationResult">
+                <strong>Tọa độ của bạn:</strong>
+                <div id="coordinateText">Chưa có vị trí.</div>
+                <strong>Link Google Maps:</strong>
+                <div><a class="location-link" id="mapLink" href="#" target="_blank" rel="noopener">Chưa có link bản đồ.</a></div>
+              </div>
+
+              <div class="location-status" id="locationStatus">
+                Trình duyệt sẽ hỏi quyền truy cập vị trí. Khách hàng cần bấm “Cho phép” để lấy tọa độ chính xác.
+              </div>
+
+              <div class="location-steps">
+                <span>1️⃣ Bấm <strong>Lấy vị trí hiện tại</strong>.</span>
+                <span>2️⃣ Bấm <strong>Sao chép vị trí</strong> hoặc <strong>Mở Google Maps</strong>.</span>
+                <span>3️⃣ Gửi link vị trí qua Zalo cho nhân viên phụ trách khu vực.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section class="hero">
       <div class="container hero-grid">
@@ -1600,6 +1806,102 @@
       document.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
           closePoster();
+        }
+      });
+    })();
+  </script>
+
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/sw.js").catch(function (error) {
+          console.log("Service worker registration failed:", error);
+        });
+      });
+    }
+  </script>
+
+
+  <script>
+    (function () {
+      const getBtn = document.getElementById("getLocationBtn");
+      const copyBtn = document.getElementById("copyLocationBtn");
+      const openBtn = document.getElementById("openMapBtn");
+      const resultBox = document.getElementById("locationResult");
+      const coordinateText = document.getElementById("coordinateText");
+      const mapLink = document.getElementById("mapLink");
+      const status = document.getElementById("locationStatus");
+
+      if (!getBtn || !copyBtn || !openBtn || !resultBox || !coordinateText || !mapLink || !status) return;
+
+      let currentMapUrl = "";
+      let currentMessage = "";
+
+      function setStatus(message) {
+        status.textContent = message;
+      }
+
+      getBtn.addEventListener("click", function () {
+        if (!navigator.geolocation) {
+          setStatus("Thiết bị hoặc trình duyệt này chưa hỗ trợ lấy vị trí.");
+          return;
+        }
+
+        setStatus("Đang lấy vị trí, vui lòng chờ...");
+        getBtn.disabled = true;
+
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            const lat = position.coords.latitude.toFixed(6);
+            const lng = position.coords.longitude.toFixed(6);
+            currentMapUrl = "https://www.google.com/maps?q=" + lat + "," + lng;
+            currentMessage = "Tôi cần hỗ trợ VNPT tại vị trí: " + currentMapUrl;
+
+            coordinateText.textContent = lat + ", " + lng;
+            mapLink.href = currentMapUrl;
+            mapLink.textContent = currentMapUrl;
+
+            resultBox.classList.add("show");
+            copyBtn.disabled = false;
+            openBtn.disabled = false;
+            getBtn.disabled = false;
+
+            setStatus("Đã lấy vị trí thành công. Hãy sao chép link và gửi qua Zalo cho nhân viên phụ trách.");
+          },
+          function (error) {
+            getBtn.disabled = false;
+            if (error.code === error.PERMISSION_DENIED) {
+              setStatus("Bạn đã từ chối quyền vị trí. Hãy bật quyền vị trí trong trình duyệt rồi thử lại.");
+            } else if (error.code === error.POSITION_UNAVAILABLE) {
+              setStatus("Không lấy được vị trí hiện tại. Hãy bật GPS/vị trí trên điện thoại rồi thử lại.");
+            } else if (error.code === error.TIMEOUT) {
+              setStatus("Lấy vị trí quá lâu. Hãy kiểm tra GPS và thử lại.");
+            } else {
+              setStatus("Có lỗi khi lấy vị trí. Vui lòng thử lại.");
+            }
+          },
+          {
+            enableHighAccuracy: true,
+            timeout: 15000,
+            maximumAge: 0
+          }
+        );
+      });
+
+      copyBtn.addEventListener("click", async function () {
+        if (!currentMessage) return;
+        try {
+          await navigator.clipboard.writeText(currentMessage);
+          setStatus("Đã sao chép vị trí. Bây giờ khách hàng có thể dán vào Zalo để gửi cho nhân viên phụ trách.");
+        } catch (error) {
+          setStatus("Không sao chép tự động được. Hãy bấm giữ vào link Google Maps để sao chép thủ công.");
+        }
+      });
+
+      openBtn.addEventListener("click", function () {
+        if (currentMapUrl) {
+          window.open(currentMapUrl, "_blank", "noopener");
         }
       });
     })();
