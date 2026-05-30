@@ -73,3 +73,9 @@ File `assetlinks-template-for-later.json` chỉ dùng sau này khi làm TWA/CH P
 
 - Đã chuyển mục `Gửi vị trí cho nhân viên phụ trách` xuống ngay bên dưới 4 ô khu vực liên hệ.
 - Khách hàng xem nhân viên phụ trách trước, sau đó mới dùng chức năng lấy vị trí và gửi Google Maps qua Zalo.
+
+
+## Đổi vị trí phần hướng dẫn và gửi vị trí
+
+- Đã đưa mục `Gửi vị trí cho nhân viên phụ trách` lên ngay sau danh sách 4 khu vực.
+- Đã chuyển phần `Khách hàng cần sửa chữa / Khách hàng cần đăng ký mới / Cần hỗ trợ ngay` xuống dưới mục gửi vị trí.
