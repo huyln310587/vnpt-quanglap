@@ -1,13 +1,11 @@
-# Website VNPT Quảng Lập - Popup poster MyTV
+# Website VNPT địa bàn Quảng Lập
 
 Bản này chỉ cần upload file `index.html` lên GitHub.
 
 ## Đã cập nhật
 
-- Khi khách mở website, poster MyTV World Cup 2026 sẽ hiện lên giữa màn hình.
-- Poster tự tắt sau 5 giây.
-- Khách có thể bấm dấu × hoặc bấm ra ngoài poster để đóng sớm.
-- Giữ nguyên toàn bộ nội dung website hiện có.
+- Đổi toàn bộ chữ `VNPT Quảng Lập` thành `VNPT địa bàn Quảng Lập`.
+- Giữ nguyên giao diện, ảnh nhân viên, video, popup poster, số điện thoại và Zalo.
 
 ## Cách cập nhật lên Vercel
 
