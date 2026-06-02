@@ -120,3 +120,10 @@ Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, websi
 - Đã bỏ nút Zalo của nhân viên Mr.Tri Toàn thuộc khu vực Ka Đô.
 - Vẫn giữ số điện thoại và nút Gọi: 0916270682.
 - Trong phần gửi tọa độ, nếu chọn Kinh Doanh Địa Bàn Ka Đô thì không mở Zalo sai.
+
+
+## Cập nhật số Zalo Mr.Tri Toàn
+
+- Đã đổi số Mr.Tri Toàn thành `0916290682`.
+- Đã thêm lại nút Zalo đúng theo số `0916290682`.
+- Nút gọi và Zalo đều dùng số mới.
