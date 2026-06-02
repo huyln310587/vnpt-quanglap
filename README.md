@@ -113,3 +113,10 @@ Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, websi
 
 - Đã đưa phần `Gửi tọa độ hỗ trợ kỹ thuật` lên trên.
 - Phần `4 khu vực nhân viên địa bàn` nằm ngay bên dưới phần gửi tọa độ.
+
+
+## Bỏ Zalo Mr.Tri Toàn
+
+- Đã bỏ nút Zalo của nhân viên Mr.Tri Toàn thuộc khu vực Ka Đô.
+- Vẫn giữ số điện thoại và nút Gọi: 0916270682.
+- Trong phần gửi tọa độ, nếu chọn Kinh Doanh Địa Bàn Ka Đô thì không mở Zalo sai.
