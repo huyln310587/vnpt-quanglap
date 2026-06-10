@@ -150,3 +150,15 @@ Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, websi
   - Kỹ Thuật Địa Bàn
   - Cả Kinh Doanh + Kỹ Thuật
 - Toàn bộ số điện thoại/Zalo nhân viên giữ nguyên theo danh sách đã chốt 100%.
+
+
+## 5 bước tăng tương tác
+
+Đã thêm:
+1. Popup poster có nút `Tôi muốn tư vấn gói này`.
+2. Lưu số nhân viên vào danh bạ `.vcf`.
+3. Tra cứu nhanh lỗi thường gặp.
+4. Chia sẻ website cho người thân.
+5. Đánh giá 5 sao sau hỗ trợ.
+
+Lưu ý: Toàn bộ số điện thoại/Zalo nhân viên giữ nguyên theo danh sách đã chốt 100%.
