@@ -143,3 +143,13 @@ Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, websi
 - FAQ câu hỏi thường gặp.
 - Gợi ý cài web như ứng dụng PWA trên điện thoại.
 - Toast thông báo khi sao chép nội dung.
+
+
+## Tăng tương tác khách hàng
+
+Đã thêm các phần tương tác:
+- `Khách hàng cần gì hôm nay?` với 4 nút thao tác nhanh.
+- Chọn khu vực để chỉ hiện đúng nhân viên địa bàn.
+- Form đăng ký lắp đặt nhanh, tạo nội dung và mở Zalo nhân viên kinh doanh.
+- Kiểm tra nhanh sự cố mạng, gợi ý cách xử lý và dẫn tới kỹ thuật địa bàn.
+- Vẫn giữ các chức năng cũ: gọi, Zalo, gửi tọa độ, tư vấn gói, FAQ, PWA.

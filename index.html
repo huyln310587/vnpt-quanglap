@@ -1623,6 +1623,254 @@
       .install-banner { bottom: 76px; }
     }
 
+
+    .interaction-section {
+      background: linear-gradient(180deg, #ffffff, #f1f9ff);
+    }
+
+    .action-hub {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .action-hub-title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .action-hub-title h2 {
+      margin: 0;
+      color: #0b2545;
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing: -1px;
+    }
+
+    .action-hub-title p {
+      margin: 6px 0 0;
+      color: #667085;
+      line-height: 1.6;
+    }
+
+    .quick-need-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .quick-need-btn {
+      border: 1px solid #cde9ff;
+      background: linear-gradient(180deg, #f8fbff, #eaf6ff);
+      color: #0b2545;
+      border-radius: 20px;
+      padding: 18px 14px;
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 0 10px 22px rgba(16,24,40,.06);
+    }
+
+    .quick-need-btn span {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 7px;
+    }
+
+    .area-focus-box {
+      background: linear-gradient(135deg, #0b80d0, #00a9e0);
+      color: #fff;
+      border-radius: 24px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+
+    .area-focus-box h3 {
+      margin: 0 0 6px;
+      font-size: 22px;
+    }
+
+    .area-focus-box p {
+      margin: 0;
+      opacity: .94;
+      line-height: 1.55;
+    }
+
+    .area-focus-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .area-focus-controls select,
+    .area-focus-controls button {
+      border: 0;
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .area-focus-controls select {
+      min-width: 190px;
+      color: #0b2545;
+    }
+
+    .area-focus-controls button {
+      background: #fff;
+      color: var(--blue);
+    }
+
+    .interactive-panels {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .interactive-panel {
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 20px;
+      background: #f8fbff;
+    }
+
+    .interactive-panel h3 {
+      margin: 0 0 10px;
+      color: #0b2545;
+      font-size: 22px;
+    }
+
+    .interactive-panel p {
+      margin: 0 0 14px;
+      color: #667085;
+      line-height: 1.55;
+    }
+
+    .quick-form {
+      display: grid;
+      gap: 10px;
+    }
+
+    .quick-form input,
+    .quick-form select,
+    .quick-form textarea {
+      width: 100%;
+      border: 1px solid #cde2f5;
+      border-radius: 14px;
+      padding: 12px;
+      font-family: inherit;
+      box-sizing: border-box;
+      background: #fff;
+      color: #0b2545;
+    }
+
+    .quick-form textarea {
+      min-height: 78px;
+      resize: vertical;
+    }
+
+    .interactive-primary-btn {
+      border: 0;
+      border-radius: 15px;
+      padding: 13px 14px;
+      background: var(--green);
+      color: #fff;
+      font-family: inherit;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .trouble-choices {
+      display: grid;
+      gap: 10px;
+    }
+
+    .trouble-choices button {
+      border: 1px solid #cde2f5;
+      background: #fff;
+      border-radius: 15px;
+      padding: 13px;
+      font-family: inherit;
+      font-weight: 850;
+      color: #0b2545;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .trouble-result {
+      display: none;
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 16px;
+      background: #fff;
+      border: 1px dashed #9fd4ff;
+      color: #344054;
+      line-height: 1.6;
+    }
+
+    .trouble-result.show {
+      display: block;
+    }
+
+    .hidden-area-card {
+      display: none !important;
+    }
+
+    .area-filter-note {
+      display: none;
+      margin: 0 auto 16px;
+      max-width: 900px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      color: #05603a;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .area-filter-note.show {
+      display: block;
+    }
+
+    @media (max-width: 1000px) {
+      .quick-need-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .interactive-panels {
+        grid-template-columns: 1fr;
+      }
+      .area-focus-box {
+        grid-template-columns: 1fr;
+      }
+      .area-focus-controls {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .quick-need-grid {
+        grid-template-columns: 1fr;
+      }
+      .action-hub {
+        padding: 18px;
+        border-radius: 24px;
+      }
+    }
+
 </style>
 
   <link rel="manifest" href="/manifest.webmanifest">
@@ -1670,6 +1918,7 @@
         <a href="#dichvu">Thiết bị</a>
         <a href="#video-dau-trang">Video</a>
         <a href="#gui-vi-tri">Gửi vị trí</a>
+        <a href="#tuong-tac">Hỗ trợ nhanh</a>
         <a href="#goi-y-dich-vu">Tư vấn gói</a>
         <a href="#faq">FAQ</a>
         <a href="#poster-goicuoc">Quảng bá</a>
@@ -1682,7 +1931,84 @@
   </header>
 
   <main id="home">
-<section id="gui-vi-tri" class="section">
+
+    <section id="tuong-tac" class="section interaction-section">
+      <div class="container">
+        <div class="action-hub">
+          <div class="action-hub-title">
+            <div>
+              <span class="mini-label">⚡ Hỗ trợ nhanh</span>
+              <h2>Khách hàng cần gì hôm nay?</h2>
+              <p>Chọn đúng nhu cầu để website tự dẫn đến phần phù hợp, giảm thao tác cho khách hàng.</p>
+            </div>
+          </div>
+
+          <div class="quick-need-grid">
+            <button class="quick-need-btn" data-go="#gui-vi-tri"><span>📍</span>Gửi vị trí sửa chữa</button>
+            <button class="quick-need-btn" data-go="#dang-ky-nhanh"><span>📝</span>Đăng ký lắp mới</button>
+            <button class="quick-need-btn" data-go="#goi-y-dich-vu"><span>💡</span>Tư vấn gói cước</button>
+            <button class="quick-need-btn" data-go="#kiem-tra-su-co"><span>🛠️</span>Kiểm tra sự cố mạng</button>
+          </div>
+
+          <div class="area-focus-box">
+            <div>
+              <h3>Chọn khu vực để hiện đúng nhân viên</h3>
+              <p>Khi khách chọn khu vực, website sẽ lọc phần nhân viên địa bàn bên dưới cho dễ nhìn hơn.</p>
+            </div>
+            <div class="area-focus-controls">
+              <select id="focusAreaSelect">
+                <option value="all">Hiện tất cả khu vực</option>
+                <option value="kado">Ka Đô</option>
+                <option value="quanglap">Quảng Lập</option>
+                <option value="proh">Proh (Cũ)</option>
+                <option value="kadon">Ka Đơn ( Cũ)</option>
+              </select>
+              <button id="applyAreaFocusBtn" type="button">Xem khu vực</button>
+            </div>
+          </div>
+
+          <div class="interactive-panels">
+            <div class="interactive-panel" id="dang-ky-nhanh">
+              <h3>Đăng ký lắp đặt nhanh</h3>
+              <p>Khách nhập thông tin, web tạo sẵn tin nhắn và mở Zalo nhân viên kinh doanh theo khu vực.</p>
+              <div class="quick-form">
+                <input id="quickName" type="text" placeholder="Họ tên khách hàng">
+                <input id="quickPhone" type="tel" placeholder="Số điện thoại liên hệ">
+                <select id="quickArea">
+                  <option value="kado">Ka Đô</option>
+                  <option value="quanglap">Quảng Lập</option>
+                  <option value="proh">Proh (Cũ)</option>
+                  <option value="kadon">Ka Đơn ( Cũ)</option>
+                </select>
+                <select id="quickNeed">
+                  <option>Đăng ký Internet</option>
+                  <option>Đăng ký Internet + MyTV</option>
+                  <option>Đăng ký Camera</option>
+                  <option>Đăng ký Mesh WiFi</option>
+                  <option>Tư vấn combo</option>
+                </select>
+                <textarea id="quickNote" placeholder="Ghi chú thêm: địa chỉ, thời gian liên hệ..."></textarea>
+                <button class="interactive-primary-btn" id="quickRegisterBtn" type="button">Gửi yêu cầu qua Zalo</button>
+              </div>
+            </div>
+
+            <div class="interactive-panel" id="kiem-tra-su-co">
+              <h3>Kiểm tra nhanh sự cố mạng</h3>
+              <p>Khách bấm vào tình trạng đang gặp, web sẽ gợi ý bước xử lý và dẫn đến kỹ thuật địa bàn.</p>
+              <div class="trouble-choices">
+                <button data-trouble="lost">Mất mạng hoàn toàn / không vào được Internet</button>
+                <button data-trouble="slow">Mạng chậm, WiFi yếu, chập chờn</button>
+                <button data-trouble="wifi">Không thấy tên WiFi hoặc quên mật khẩu WiFi</button>
+                <button data-trouble="mytv">MyTV không xem được / lỗi hình ảnh</button>
+              </div>
+              <div class="trouble-result" id="troubleResult"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gui-vi-tri" class="section">
       <div class="container">
         <div class="easy-location">
           <div class="easy-location-head">
@@ -2508,6 +2834,168 @@
           if (installBanner) installBanner.classList.remove('show');
         });
       }
+    })();
+  </script>
+
+
+  <script>
+    (function () {
+      const salesByArea = {
+        kado: { area: "Ka Đô", name: "Mr.Tri Toàn", phone: "0916290682", zalo: "0916290682" },
+        quanglap: { area: "Quảng Lập", name: "Mr.Thanh Xuân", phone: "0916582579", zalo: "0916582579" },
+        proh: { area: "Proh (Cũ)", name: "Mr.Thanh Xuân", phone: "0916582579", zalo: "0916582579" },
+        kadon: { area: "Ka Đơn ( Cũ)", name: "Mrs.Thu Thủy", phone: "0848336125", zalo: "0971336125" }
+      };
+
+      const techByArea = {
+        kado: { area: "Ka Đô", name: "Mr.Hữu Thắng", phone: "0914404080", zalo: "0914404080" },
+        quanglap: { area: "Quảng Lập", name: "Mr.Đức Tân", phone: "0914505605", zalo: "0914505605" },
+        proh: { area: "Proh (Cũ)", name: "Mr.Lê Yên", phone: "0911287851", zalo: "0911287851" },
+        kadon: { area: "Ka Đơn ( Cũ)", name: "Mr.Trường Giang", phone: "0919528179", zalo: "0919528179" }
+      };
+
+      function toast(message) {
+        const el = document.getElementById('siteToast');
+        if (!el) return;
+        el.textContent = message;
+        el.classList.add('show');
+        setTimeout(function () { el.classList.remove('show'); }, 1800);
+      }
+
+      function goTo(selector) {
+        const target = document.querySelector(selector);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      document.querySelectorAll('.quick-need-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          goTo(btn.getAttribute('data-go'));
+        });
+      });
+
+      const areaSelect = document.getElementById('focusAreaSelect');
+      const applyBtn = document.getElementById('applyAreaFocusBtn');
+
+      function normalizeAreaTitle(text) {
+        return (text || '').toLowerCase()
+          .replace(/đ/g, 'd')
+          .replace(/[()]/g, '')
+          .replace(/\s+/g, '')
+          .trim();
+      }
+
+      function areaKeyFromTitle(text) {
+        const t = normalizeAreaTitle(text);
+        if (t.includes('kado')) return 'kado';
+        if (t.includes('quanglap')) return 'quanglap';
+        if (t.includes('proh')) return 'proh';
+        if (t.includes('kadon')) return 'kadon';
+        return '';
+      }
+
+      function ensureAreaNote() {
+        const section = document.getElementById('khuvuc');
+        if (!section) return null;
+        let note = document.getElementById('areaFilterNote');
+        if (!note) {
+          note = document.createElement('div');
+          note.id = 'areaFilterNote';
+          note.className = 'area-filter-note';
+          section.querySelector('.container')?.prepend(note);
+        }
+        return note;
+      }
+
+      function filterArea() {
+        const selected = areaSelect ? areaSelect.value : 'all';
+        const section = document.getElementById('khuvuc');
+        if (!section) return;
+
+        const cards = section.querySelectorAll('.area-card');
+        cards.forEach(function (card) {
+          const title = card.querySelector('h3, h2, .area-title');
+          const key = areaKeyFromTitle(title ? title.textContent : card.textContent);
+          if (selected === 'all' || key === selected) {
+            card.classList.remove('hidden-area-card');
+          } else {
+            card.classList.add('hidden-area-card');
+          }
+        });
+
+        const note = ensureAreaNote();
+        if (note) {
+          if (selected === 'all') {
+            note.classList.remove('show');
+            note.textContent = '';
+          } else {
+            const areaName = (salesByArea[selected] || techByArea[selected]).area;
+            note.textContent = 'Đang hiển thị nhân viên khu vực ' + areaName + '. Bấm “Hiện tất cả khu vực” để xem đầy đủ.';
+            note.classList.add('show');
+          }
+        }
+
+        goTo('#khuvuc');
+      }
+
+      if (applyBtn) applyBtn.addEventListener('click', filterArea);
+      if (areaSelect) areaSelect.addEventListener('change', filterArea);
+
+      const quickRegisterBtn = document.getElementById('quickRegisterBtn');
+      if (quickRegisterBtn) {
+        quickRegisterBtn.addEventListener('click', async function () {
+          const name = document.getElementById('quickName')?.value.trim() || 'Khách hàng';
+          const phone = document.getElementById('quickPhone')?.value.trim() || 'Chưa nhập số';
+          const area = document.getElementById('quickArea')?.value || 'kado';
+          const need = document.getElementById('quickNeed')?.value || 'Tư vấn dịch vụ';
+          const note = document.getElementById('quickNote')?.value.trim() || 'Chưa có ghi chú';
+          const sales = salesByArea[area];
+
+          const message = 'Em cần tư vấn/lắp đặt VNPT địa bàn ' + sales.area + '.\n' +
+            'Họ tên: ' + name + '\n' +
+            'Số điện thoại: ' + phone + '\n' +
+            'Nhu cầu: ' + need + '\n' +
+            'Ghi chú: ' + note + '\n\n' +
+            'Nhờ ' + sales.name + ' hỗ trợ tư vấn giúp em.';
+
+          try {
+            await navigator.clipboard.writeText(message);
+            toast('Đã tạo nội dung. Đang mở Zalo nhân viên kinh doanh.');
+          } catch (e) {
+            toast('Đang mở Zalo nhân viên kinh doanh.');
+          }
+
+          setTimeout(function () {
+            window.open('https://zalo.me/' + sales.zalo, '_blank', 'noopener');
+          }, 350);
+        });
+      }
+
+      const troubleResult = document.getElementById('troubleResult');
+      document.querySelectorAll('[data-trouble]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const type = btn.getAttribute('data-trouble');
+          let html = '';
+          if (type === 'lost') {
+            html = '<strong>Gợi ý:</strong> Kiểm tra nguồn modem, dây quang/dây LAN. Nếu vẫn mất mạng, nên gửi vị trí và gọi Kỹ Thuật Địa Bàn.';
+          } else if (type === 'slow') {
+            html = '<strong>Gợi ý:</strong> Khởi động lại modem, đứng gần WiFi để kiểm tra. Nhà rộng/nhiều tầng nên tư vấn thêm Mesh WiFi.';
+          } else if (type === 'wifi') {
+            html = '<strong>Gợi ý:</strong> Kiểm tra modem có phát WiFi không. Nếu cần đổi tên/mật khẩu WiFi, liên hệ Kỹ Thuật Địa Bàn.';
+          } else {
+            html = '<strong>Gợi ý:</strong> Kiểm tra nguồn đầu thu MyTV, dây HDMI/LAN. Nếu vẫn lỗi, liên hệ Kỹ Thuật Địa Bàn.';
+          }
+
+          html += '<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">' +
+            '<a class="advisor-primary" href="#gui-vi-tri">Gửi vị trí</a>' +
+            '<a class="advisor-secondary" href="#khuvuc">Gọi kỹ thuật địa bàn</a>' +
+            '</div>';
+
+          if (troubleResult) {
+            troubleResult.innerHTML = html;
+            troubleResult.classList.add('show');
+          }
+        });
+      });
     })();
   </script>
 
