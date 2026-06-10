@@ -135,21 +135,18 @@ Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, websi
   - Gọi: 0916290682
   - Zalo: https://zalo.me/0916290682
 
-## Thêm tính năng mới
 
-Đã thêm các tính năng:
-- Nút nổi thao tác nhanh: gọi nhanh, gửi vị trí, tư vấn gói, lên đầu trang.
-- Tư vấn gói dịch vụ nhanh theo nhu cầu khách hàng.
-- FAQ câu hỏi thường gặp.
-- Gợi ý cài web như ứng dụng PWA trên điện thoại.
-- Toast thông báo khi sao chép nội dung.
+## Bản sửa lỗi mất ảnh nhân viên
+
+- Dựng lại từ bản ổn định có đủ ảnh nhân viên.
+- Giữ số/Zalo Mr.Tri Toàn: 0916290682.
+- Thêm lại phần tăng tương tác nhưng không thay đổi cấu trúc thẻ ảnh nhân viên.
 
 
-## Tăng tương tác khách hàng
+## Đăng ký lắp mạng thêm kỹ thuật
 
-Đã thêm các phần tương tác:
-- `Khách hàng cần gì hôm nay?` với 4 nút thao tác nhanh.
-- Chọn khu vực để chỉ hiện đúng nhân viên địa bàn.
-- Form đăng ký lắp đặt nhanh, tạo nội dung và mở Zalo nhân viên kinh doanh.
-- Kiểm tra nhanh sự cố mạng, gợi ý cách xử lý và dẫn tới kỹ thuật địa bàn.
-- Vẫn giữ các chức năng cũ: gọi, Zalo, gửi tọa độ, tư vấn gói, FAQ, PWA.
+- Phần `Đăng ký lắp đặt nhanh` đã thêm lựa chọn người nhận:
+  - Kinh Doanh Địa Bàn
+  - Kỹ Thuật Địa Bàn
+  - Cả Kinh Doanh + Kỹ Thuật
+- Toàn bộ số điện thoại/Zalo nhân viên giữ nguyên theo danh sách đã chốt 100%.

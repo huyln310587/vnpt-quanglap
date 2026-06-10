@@ -1555,321 +1555,38 @@
     }
 
 
-    .feature-section { background: linear-gradient(180deg, #f7fbff, #ffffff); }
-    .advisor-card {
-      background: #fff; border: 1px solid var(--border); border-radius: 32px; padding: 26px;
-      box-shadow: var(--shadow); display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 22px; align-items: stretch;
-    }
-    .advisor-intro {
-      background: linear-gradient(135deg, var(--blue), var(--blue-dark)); color: #fff; border-radius: 26px;
-      padding: 28px; display: flex; flex-direction: column; justify-content: center;
-    }
-    .advisor-intro h2 { margin: 0 0 12px; font-size: clamp(27px, 4vw, 42px); line-height: 1.12; letter-spacing: -0.9px; }
-    .advisor-intro p { margin: 0; line-height: 1.65; opacity: 0.94; }
-    .advisor-panel { border: 1px solid var(--border); border-radius: 26px; padding: 22px; background: #f8fbff; }
-    .advisor-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
-    .advisor-option {
-      display: flex; gap: 10px; align-items: flex-start; background: #fff; border: 1px solid #cde2f5;
-      border-radius: 16px; padding: 13px; font-weight: 850; color: #0b2545; cursor: pointer;
-    }
-    .advisor-option input { margin-top: 3px; transform: scale(1.15); }
-    .advisor-result {
-      background: #fff; border: 1px dashed #9fd4ff; border-radius: 18px; padding: 16px;
-      min-height: 104px; line-height: 1.6; color: #344054;
-    }
-    .advisor-result h3 { color: #0b2545; margin: 0 0 8px; }
-    .advisor-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
-    .advisor-actions a, .advisor-actions button {
-      border: 0; border-radius: 14px; padding: 12px 14px; font-family: inherit; font-weight: 900;
-      cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;
-    }
-    .advisor-primary { background: var(--green); color: #fff; }
-    .advisor-secondary { background: #e8f5ff; color: var(--blue); border: 1px solid #cde9ff !important; }
-    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 22px; box-shadow: 0 12px 28px rgba(16,24,40,.06); overflow: hidden; }
-    .faq-question {
-      width: 100%; border: 0; background: #fff; color: #0b2545; padding: 18px; font-family: inherit;
-      font-size: 16px; font-weight: 900; text-align: left; cursor: pointer; display: flex; justify-content: space-between; gap: 12px; align-items: center;
-    }
-    .faq-answer { display: none; padding: 0 18px 18px; color: #475467; line-height: 1.65; }
-    .faq-item.open .faq-answer { display: block; }
-    .quick-float { position: fixed; right: 18px; bottom: 18px; z-index: 8888; display: grid; gap: 10px; }
-    .quick-float a, .quick-float button {
-      width: 52px; height: 52px; border-radius: 999px; border: 0; box-shadow: 0 12px 26px rgba(16,24,40,.22);
-      display: grid; place-items: center; font-size: 22px; cursor: pointer; text-decoration: none; background: var(--blue); color: #fff;
-    }
-    .quick-float .green { background: var(--green); }
-    .quick-float .soft { background: #fff; color: var(--blue); border: 1px solid #cde9ff; }
-    .install-banner {
-      display: none; position: fixed; left: 16px; right: 16px; bottom: 88px; z-index: 8887; background: #fff;
-      border: 1px solid var(--border); box-shadow: var(--shadow); border-radius: 22px; padding: 14px; align-items: center; justify-content: space-between; gap: 12px;
-    }
-    .install-banner.show { display: flex; }
-    .install-banner strong { color: #0b2545; display: block; margin-bottom: 3px; }
-    .install-banner span { color: #667085; font-size: 13px; }
-    .install-banner button { border: 0; border-radius: 12px; padding: 10px 12px; font-weight: 900; cursor: pointer; font-family: inherit; }
-    .install-now { background: var(--blue); color: #fff; }
-    .install-close { background: #eef6ff; color: var(--blue); }
-    .toast {
-      position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 99999;
-      background: rgba(11,37,69,.94); color: #fff; padding: 12px 16px; border-radius: 999px; font-weight: 850; display: none; box-shadow: 0 16px 34px rgba(0,0,0,.2);
-    }
-    .toast.show { display: block; }
-    @media (max-width: 1000px) { .advisor-card { grid-template-columns: 1fr; } .faq-grid { grid-template-columns: 1fr; } }
-    @media (max-width: 620px) {
-      .advisor-options { grid-template-columns: 1fr; }
-      .quick-float { right: 12px; bottom: 12px; }
-      .quick-float a, .quick-float button { width: 48px; height: 48px; }
-      .install-banner { bottom: 76px; }
-    }
-
-
-    .interaction-section {
-      background: linear-gradient(180deg, #ffffff, #f1f9ff);
-    }
-
-    .action-hub {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 32px;
-      padding: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .action-hub-title {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 18px;
-      margin-bottom: 20px;
-    }
-
-    .action-hub-title h2 {
-      margin: 0;
-      color: #0b2545;
-      font-size: clamp(28px, 4vw, 44px);
-      letter-spacing: -1px;
-    }
-
-    .action-hub-title p {
-      margin: 6px 0 0;
-      color: #667085;
-      line-height: 1.6;
-    }
-
-    .quick-need-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin-bottom: 22px;
-    }
-
-    .quick-need-btn {
-      border: 1px solid #cde9ff;
-      background: linear-gradient(180deg, #f8fbff, #eaf6ff);
-      color: #0b2545;
-      border-radius: 20px;
-      padding: 18px 14px;
-      font-family: inherit;
-      font-weight: 900;
-      font-size: 15px;
-      cursor: pointer;
-      text-align: center;
-      box-shadow: 0 10px 22px rgba(16,24,40,.06);
-    }
-
-    .quick-need-btn span {
-      display: block;
-      font-size: 28px;
-      margin-bottom: 7px;
-    }
-
-    .area-focus-box {
-      background: linear-gradient(135deg, #0b80d0, #00a9e0);
-      color: #fff;
-      border-radius: 24px;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 14px;
-      align-items: center;
-      margin-bottom: 22px;
-    }
-
-    .area-focus-box h3 {
-      margin: 0 0 6px;
-      font-size: 22px;
-    }
-
-    .area-focus-box p {
-      margin: 0;
-      opacity: .94;
-      line-height: 1.55;
-    }
-
-    .area-focus-controls {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .area-focus-controls select,
-    .area-focus-controls button {
-      border: 0;
-      border-radius: 14px;
-      padding: 12px 14px;
-      font-family: inherit;
-      font-weight: 900;
-      cursor: pointer;
-    }
-
-    .area-focus-controls select {
-      min-width: 190px;
-      color: #0b2545;
-    }
-
-    .area-focus-controls button {
-      background: #fff;
-      color: var(--blue);
-    }
-
-    .interactive-panels {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .interactive-panel {
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 20px;
-      background: #f8fbff;
-    }
-
-    .interactive-panel h3 {
-      margin: 0 0 10px;
-      color: #0b2545;
-      font-size: 22px;
-    }
-
-    .interactive-panel p {
-      margin: 0 0 14px;
-      color: #667085;
-      line-height: 1.55;
-    }
-
-    .quick-form {
-      display: grid;
-      gap: 10px;
-    }
-
-    .quick-form input,
-    .quick-form select,
-    .quick-form textarea {
-      width: 100%;
-      border: 1px solid #cde2f5;
-      border-radius: 14px;
-      padding: 12px;
-      font-family: inherit;
-      box-sizing: border-box;
-      background: #fff;
-      color: #0b2545;
-    }
-
-    .quick-form textarea {
-      min-height: 78px;
-      resize: vertical;
-    }
-
-    .interactive-primary-btn {
-      border: 0;
-      border-radius: 15px;
-      padding: 13px 14px;
-      background: var(--green);
-      color: #fff;
-      font-family: inherit;
-      font-weight: 900;
-      cursor: pointer;
-    }
-
-    .trouble-choices {
-      display: grid;
-      gap: 10px;
-    }
-
-    .trouble-choices button {
-      border: 1px solid #cde2f5;
-      background: #fff;
-      border-radius: 15px;
-      padding: 13px;
-      font-family: inherit;
-      font-weight: 850;
-      color: #0b2545;
-      cursor: pointer;
-      text-align: left;
-    }
-
-    .trouble-result {
-      display: none;
-      margin-top: 14px;
-      padding: 14px;
-      border-radius: 16px;
-      background: #fff;
-      border: 1px dashed #9fd4ff;
-      color: #344054;
-      line-height: 1.6;
-    }
-
-    .trouble-result.show {
-      display: block;
-    }
-
-    .hidden-area-card {
-      display: none !important;
-    }
-
-    .area-filter-note {
-      display: none;
-      margin: 0 auto 16px;
-      max-width: 900px;
-      padding: 12px 14px;
-      border-radius: 16px;
-      background: #ecfdf3;
-      border: 1px solid #abefc6;
-      color: #05603a;
-      font-weight: 800;
-      text-align: center;
-    }
-
-    .area-filter-note.show {
-      display: block;
-    }
-
-    @media (max-width: 1000px) {
-      .quick-need-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .interactive-panels {
-        grid-template-columns: 1fr;
-      }
-      .area-focus-box {
-        grid-template-columns: 1fr;
-      }
-      .area-focus-controls {
-        justify-content: flex-start;
-      }
-    }
-
-    @media (max-width: 620px) {
-      .quick-need-grid {
-        grid-template-columns: 1fr;
-      }
-      .action-hub {
-        padding: 18px;
-        border-radius: 24px;
-      }
-    }
+    .interaction-section { background: linear-gradient(180deg, #ffffff, #f1f9ff); }
+    .action-hub { background:#fff; border:1px solid var(--border); border-radius:32px; padding:24px; box-shadow:var(--shadow); }
+    .action-hub-title { display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin-bottom:20px; }
+    .action-hub-title h2 { margin:0; color:#0b2545; font-size:clamp(28px,4vw,44px); letter-spacing:-1px; }
+    .action-hub-title p { margin:6px 0 0; color:#667085; line-height:1.6; }
+    .quick-need-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:22px; }
+    .quick-need-btn { border:1px solid #cde9ff; background:linear-gradient(180deg,#f8fbff,#eaf6ff); color:#0b2545; border-radius:20px; padding:18px 14px; font-family:inherit; font-weight:900; font-size:15px; cursor:pointer; text-align:center; box-shadow:0 10px 22px rgba(16,24,40,.06); }
+    .quick-need-btn span { display:block; font-size:28px; margin-bottom:7px; }
+    .area-focus-box { background:linear-gradient(135deg,#0b80d0,#00a9e0); color:#fff; border-radius:24px; padding:20px; display:grid; grid-template-columns:1fr auto; gap:14px; align-items:center; margin-bottom:22px; }
+    .area-focus-box h3 { margin:0 0 6px; font-size:22px; }
+    .area-focus-box p { margin:0; opacity:.94; line-height:1.55; }
+    .area-focus-controls { display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+    .area-focus-controls select, .area-focus-controls button { border:0; border-radius:14px; padding:12px 14px; font-family:inherit; font-weight:900; cursor:pointer; }
+    .area-focus-controls select { min-width:190px; color:#0b2545; }
+    .area-focus-controls button { background:#fff; color:var(--blue); }
+    .interactive-panels { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .interactive-panel { border:1px solid var(--border); border-radius:24px; padding:20px; background:#f8fbff; }
+    .interactive-panel h3 { margin:0 0 10px; color:#0b2545; font-size:22px; }
+    .interactive-panel p { margin:0 0 14px; color:#667085; line-height:1.55; }
+    .quick-form { display:grid; gap:10px; }
+    .quick-form input, .quick-form select, .quick-form textarea { width:100%; border:1px solid #cde2f5; border-radius:14px; padding:12px; font-family:inherit; box-sizing:border-box; background:#fff; color:#0b2545; }
+    .quick-form textarea { min-height:78px; resize:vertical; }
+    .interactive-primary-btn { border:0; border-radius:15px; padding:13px 14px; background:var(--green); color:#fff; font-family:inherit; font-weight:900; cursor:pointer; }
+    .trouble-choices { display:grid; gap:10px; }
+    .trouble-choices button { border:1px solid #cde2f5; background:#fff; border-radius:15px; padding:13px; font-family:inherit; font-weight:850; color:#0b2545; cursor:pointer; text-align:left; }
+    .trouble-result { display:none; margin-top:14px; padding:14px; border-radius:16px; background:#fff; border:1px dashed #9fd4ff; color:#344054; line-height:1.6; }
+    .trouble-result.show { display:block; }
+    .area-card.area-hidden-by-filter { display:none !important; }
+    .area-filter-note { display:none; margin:0 auto 16px; max-width:900px; padding:12px 14px; border-radius:16px; background:#ecfdf3; border:1px solid #abefc6; color:#05603a; font-weight:800; text-align:center; }
+    .area-filter-note.show { display:block; }
+    @media(max-width:1000px){ .quick-need-grid{grid-template-columns:repeat(2,1fr);} .interactive-panels{grid-template-columns:1fr;} .area-focus-box{grid-template-columns:1fr;} .area-focus-controls{justify-content:flex-start;} }
+    @media(max-width:620px){ .quick-need-grid{grid-template-columns:1fr;} .action-hub{padding:18px; border-radius:24px;} }
 
 </style>
 
@@ -1919,8 +1636,6 @@
         <a href="#video-dau-trang">Video</a>
         <a href="#gui-vi-tri">Gửi vị trí</a>
         <a href="#tuong-tac">Hỗ trợ nhanh</a>
-        <a href="#goi-y-dich-vu">Tư vấn gói</a>
-        <a href="#faq">FAQ</a>
         <a href="#poster-goicuoc">Quảng bá</a>
         <a href="#goicuoc">Gói cước</a>
         <a href="#khuvuc">Khu vực</a>
@@ -1970,7 +1685,7 @@
           <div class="interactive-panels">
             <div class="interactive-panel" id="dang-ky-nhanh">
               <h3>Đăng ký lắp đặt nhanh</h3>
-              <p>Khách nhập thông tin, web tạo sẵn tin nhắn và mở Zalo nhân viên kinh doanh theo khu vực.</p>
+              <p>Khách nhập thông tin, chọn gửi cho Kinh Doanh hoặc Kỹ Thuật Địa Bàn, web sẽ tạo sẵn tin nhắn và mở Zalo đúng nhân viên theo khu vực.</p>
               <div class="quick-form">
                 <input id="quickName" type="text" placeholder="Họ tên khách hàng">
                 <input id="quickPhone" type="tel" placeholder="Số điện thoại liên hệ">
@@ -1980,6 +1695,11 @@
                   <option value="proh">Proh (Cũ)</option>
                   <option value="kadon">Ka Đơn ( Cũ)</option>
                 </select>
+                <select id="quickReceiver">
+                  <option value="sales">Gửi Kinh Doanh Địa Bàn</option>
+                  <option value="tech">Gửi Kỹ Thuật Địa Bàn</option>
+                  <option value="both">Gửi cả Kinh Doanh + Kỹ Thuật</option>
+                </select>
                 <select id="quickNeed">
                   <option>Đăng ký Internet</option>
                   <option>Đăng ký Internet + MyTV</option>
@@ -1988,7 +1708,7 @@
                   <option>Tư vấn combo</option>
                 </select>
                 <textarea id="quickNote" placeholder="Ghi chú thêm: địa chỉ, thời gian liên hệ..."></textarea>
-                <button class="interactive-primary-btn" id="quickRegisterBtn" type="button">Gửi yêu cầu qua Zalo</button>
+                <button class="interactive-primary-btn" id="quickRegisterBtn" type="button">Gửi yêu cầu đúng nhân viên</button>
               </div>
             </div>
 
@@ -2110,6 +1830,7 @@
                 <span class="phone">0916290682</span>
                 <div class="person-actions">
                   <a class="call" href="tel:0916290682">Gọi</a>
+                  <a class="zalo" href="https://zalo.me/0916290682" target="_blank" rel="noopener">Zalo</a>
                 </div>
               </div>
             </div>
@@ -2279,36 +2000,6 @@
       </div>
     </section>
 
-    
-    <section id="goi-y-dich-vu" class="section feature-section">
-      <div class="container">
-        <div class="advisor-card">
-          <div class="advisor-intro">
-            <h2>Tư vấn gói dịch vụ nhanh</h2>
-            <p>Khách hàng chọn nhu cầu sử dụng, website sẽ gợi ý nhóm dịch vụ phù hợp để dễ trao đổi với nhân viên kinh doanh địa bàn.</p>
-          </div>
-          <div class="advisor-panel">
-            <div class="advisor-options">
-              <label class="advisor-option"><input type="checkbox" value="internet"> Internet mạnh, WiFi ổn định</label>
-              <label class="advisor-option"><input type="checkbox" value="mytv"> Xem truyền hình, thể thao, phim</label>
-              <label class="advisor-option"><input type="checkbox" value="camera"> Lắp camera giám sát</label>
-              <label class="advisor-option"><input type="checkbox" value="mesh"> Nhà rộng, nhiều tầng, WiFi yếu</label>
-              <label class="advisor-option"><input type="checkbox" value="business"> Hộ kinh doanh/cửa hàng</label>
-              <label class="advisor-option"><input type="checkbox" value="repair"> Cần sửa chữa kỹ thuật</label>
-            </div>
-            <div class="advisor-result" id="advisorResult">
-              <h3>Gợi ý ban đầu</h3>
-              <p>Chọn nhu cầu bên trên để nhận gợi ý gói Internet, MyTV, Camera hoặc Mesh WiFi phù hợp.</p>
-            </div>
-            <div class="advisor-actions">
-              <a class="advisor-primary" href="#khuvuc">Liên hệ nhân viên địa bàn</a>
-              <button class="advisor-secondary" id="copyAdvisorBtn" type="button">Sao chép nội dung tư vấn</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="dichvu" class="section">
       <div class="container">
         <div class="section-title">
@@ -2448,34 +2139,6 @@
               </div>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="faq" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Câu hỏi thường gặp</h2>
-          <p>Một số câu hỏi khách hàng thường cần khi lắp đặt hoặc sửa chữa dịch vụ VNPT địa bàn Quảng Lập.</p>
-        </div>
-        <div class="faq-grid">
-          <div class="faq-item">
-            <button class="faq-question" type="button">Mạng chậm hoặc mất mạng thì làm gì? <span>+</span></button>
-            <div class="faq-answer">Chọn đúng khu vực đang sử dụng dịch vụ, bấm gọi Kỹ Thuật Địa Bàn hoặc gửi tọa độ để nhân viên hỗ trợ nhanh hơn.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" type="button">Muốn lắp Internet mới liên hệ ai? <span>+</span></button>
-            <div class="faq-answer">Chọn khu vực cần lắp đặt, bấm gọi hoặc Zalo Kinh Doanh Địa Bàn để được tư vấn gói phù hợp.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" type="button">Nhà nhiều tầng WiFi yếu xử lý sao? <span>+</span></button>
-            <div class="faq-answer">Có thể tư vấn thêm Mesh WiFi để mở rộng vùng phủ sóng, giảm điểm yếu WiFi trong nhà nhiều tầng hoặc diện tích rộng.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" type="button">Có hỗ trợ MyTV, Camera không? <span>+</span></button>
-            <div class="faq-answer">Có. Website có thông tin các dịch vụ Internet, MyTV, Camera và Mesh WiFi. Khách hàng liên hệ nhân viên kinh doanh theo khu vực để được tư vấn.</div>
-          </div>
         </div>
       </div>
     </section>
@@ -2717,149 +2380,32 @@
     })();
   </script>
 
-
-  <div class="quick-float" aria-label="Thao tác nhanh">
-    <a class="green" href="tel:0914404080" title="Gọi nhanh kỹ thuật">☎</a>
-    <a href="#gui-vi-tri" title="Gửi vị trí">📍</a>
-    <a class="soft" href="#goi-y-dich-vu" title="Tư vấn gói">💡</a>
-    <button class="soft" id="backToTopBtn" type="button" title="Lên đầu trang">↑</button>
-  </div>
-  <div class="install-banner" id="installBanner">
-    <div>
-      <strong>Cài web như ứng dụng điện thoại</strong>
-      <span>Truy cập nhanh VNPT địa bàn Quảng Lập từ màn hình chính.</span>
-    </div>
-    <div>
-      <button class="install-now" id="installPwaBtn" type="button">Cài</button>
-      <button class="install-close" id="closeInstallBtn" type="button">Đóng</button>
-    </div>
-  </div>
-  <div class="toast" id="siteToast">Đã sao chép</div>
-
-
   <script>
     (function () {
-      const advisorInputs = document.querySelectorAll('.advisor-option input');
-      const advisorResult = document.getElementById('advisorResult');
-      const copyAdvisorBtn = document.getElementById('copyAdvisorBtn');
-      const toast = document.getElementById('siteToast');
-      let advisorText = '';
-
-      function showToast(message) {
-        if (!toast) return;
-        toast.textContent = message;
-        toast.classList.add('show');
-        setTimeout(function () { toast.classList.remove('show'); }, 1800);
-      }
-
-      function updateAdvisor() {
-        if (!advisorResult) return;
-        const selected = Array.from(advisorInputs).filter(function(i){ return i.checked; }).map(function(i){ return i.value; });
-        let lines = [];
-
-        if (selected.length === 0) {
-          advisorResult.innerHTML = '<h3>Gợi ý ban đầu</h3><p>Chọn nhu cầu bên trên để nhận gợi ý gói Internet, MyTV, Camera hoặc Mesh WiFi phù hợp.</p>';
-          advisorText = 'Khách hàng cần tư vấn dịch vụ VNPT địa bàn Quảng Lập.';
-          return;
-        }
-
-        if (selected.includes('repair')) lines.push('Ưu tiên liên hệ Kỹ Thuật Địa Bàn để kiểm tra/sửa chữa dịch vụ.');
-        if (selected.includes('internet')) lines.push('Nên tư vấn gói Internet cáp quang phù hợp nhu cầu sử dụng.');
-        if (selected.includes('mytv')) lines.push('Có thể tư vấn thêm MyTV cho nhu cầu truyền hình, phim, thể thao.');
-        if (selected.includes('camera')) lines.push('Có thể tư vấn combo Internet + Camera giám sát.');
-        if (selected.includes('mesh')) lines.push('Nên kiểm tra vùng phủ sóng và tư vấn thêm Mesh WiFi.');
-        if (selected.includes('business')) lines.push('Hộ kinh doanh nên ưu tiên gói ổn định, có thể kết hợp Camera/Mesh theo mặt bằng.');
-
-        advisorText = 'Khách hàng cần tư vấn VNPT địa bàn Quảng Lập:\n- ' + lines.join('\n- ');
-        advisorResult.innerHTML = '<h3>Gợi ý phù hợp</h3><ul>' + lines.map(function(l){ return '<li>' + l + '</li>'; }).join('') + '</ul>';
-      }
-
-      advisorInputs.forEach(function(input){ input.addEventListener('change', updateAdvisor); });
-      updateAdvisor();
-
-      if (copyAdvisorBtn) {
-        copyAdvisorBtn.addEventListener('click', async function () {
-          try {
-            await navigator.clipboard.writeText(advisorText || 'Khách hàng cần tư vấn dịch vụ VNPT địa bàn Quảng Lập.');
-            showToast('Đã sao chép nội dung tư vấn');
-          } catch (e) {
-            showToast('Không sao chép được');
-          }
-        });
-      }
-
-      document.querySelectorAll('.faq-question').forEach(function (button) {
-        button.addEventListener('click', function () {
-          const item = button.closest('.faq-item');
-          if (!item) return;
-          item.classList.toggle('open');
-          const plus = button.querySelector('span');
-          if (plus) plus.textContent = item.classList.contains('open') ? '−' : '+';
-        });
-      });
-
-      const backToTopBtn = document.getElementById('backToTopBtn');
-      if (backToTopBtn) {
-        backToTopBtn.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-      }
-
-      let deferredPrompt = null;
-      const installBanner = document.getElementById('installBanner');
-      const installPwaBtn = document.getElementById('installPwaBtn');
-      const closeInstallBtn = document.getElementById('closeInstallBtn');
-
-      window.addEventListener('beforeinstallprompt', function (event) {
-        event.preventDefault();
-        deferredPrompt = event;
-        if (installBanner) installBanner.classList.add('show');
-      });
-
-      if (installPwaBtn) {
-        installPwaBtn.addEventListener('click', async function () {
-          if (!deferredPrompt) {
-            showToast('Vào menu trình duyệt và chọn Thêm vào màn hình chính');
-            return;
-          }
-          deferredPrompt.prompt();
-          await deferredPrompt.userChoice;
-          deferredPrompt = null;
-          if (installBanner) installBanner.classList.remove('show');
-        });
-      }
-
-      if (closeInstallBtn) {
-        closeInstallBtn.addEventListener('click', function () {
-          if (installBanner) installBanner.classList.remove('show');
-        });
-      }
-    })();
-  </script>
-
-
-  <script>
-    (function () {
-      const salesByArea = {
-        kado: { area: "Ka Đô", name: "Mr.Tri Toàn", phone: "0916290682", zalo: "0916290682" },
-        quanglap: { area: "Quảng Lập", name: "Mr.Thanh Xuân", phone: "0916582579", zalo: "0916582579" },
-        proh: { area: "Proh (Cũ)", name: "Mr.Thanh Xuân", phone: "0916582579", zalo: "0916582579" },
-        kadon: { area: "Ka Đơn ( Cũ)", name: "Mrs.Thu Thủy", phone: "0848336125", zalo: "0971336125" }
+      const salesByArea2 = {
+        kado: { area: "Ka Đô", role: "Kinh Doanh Địa Bàn", name: "Mr.Tri Toàn", phone: "0916290682", zalo: "0916290682" },
+        quanglap: { area: "Quảng Lập", role: "Kinh Doanh Địa Bàn", name: "Mr.Thanh Xuân", phone: "0916582579", zalo: "0916582579" },
+        proh: { area: "Proh (Cũ)", role: "Kinh Doanh Địa Bàn", name: "Mr.Thanh Xuân", phone: "0916582579", zalo: "0916582579" },
+        kadon: { area: "Ka Đơn ( Cũ)", role: "Kinh Doanh Địa Bàn", name: "Mrs.Thu Thủy", phone: "0848336125", zalo: "0971336125" }
       };
 
-      const techByArea = {
-        kado: { area: "Ka Đô", name: "Mr.Hữu Thắng", phone: "0914404080", zalo: "0914404080" },
-        quanglap: { area: "Quảng Lập", name: "Mr.Đức Tân", phone: "0914505605", zalo: "0914505605" },
-        proh: { area: "Proh (Cũ)", name: "Mr.Lê Yên", phone: "0911287851", zalo: "0911287851" },
-        kadon: { area: "Ka Đơn ( Cũ)", name: "Mr.Trường Giang", phone: "0919528179", zalo: "0919528179" }
+      const techByArea2 = {
+        kado: { area: "Ka Đô", role: "Kỹ Thuật Địa Bàn", name: "Mr.Hữu Thắng", phone: "0914404080", zalo: "0914404080" },
+        quanglap: { area: "Quảng Lập", role: "Kỹ Thuật Địa Bàn", name: "Mr.Đức Tân", phone: "0914505605", zalo: "0914505605" },
+        proh: { area: "Proh (Cũ)", role: "Kỹ Thuật Địa Bàn", name: "Mr.Lê Yên", phone: "0911287851", zalo: "0911287851" },
+        kadon: { area: "Ka Đơn ( Cũ)", role: "Kỹ Thuật Địa Bàn", name: "Mr.Trường Giang", phone: "0919528179", zalo: "0919528179" }
       };
 
-      function toast(message) {
-        const el = document.getElementById('siteToast');
+      function showSmallToast(message) {
+        const el = document.getElementById('siteToast') || document.getElementById('easyLocationStatus');
         if (!el) return;
-        el.textContent = message;
-        el.classList.add('show');
-        setTimeout(function () { el.classList.remove('show'); }, 1800);
+        if (el.id === 'siteToast') {
+          el.textContent = message;
+          el.classList.add('show');
+          setTimeout(function () { el.classList.remove('show'); }, 1800);
+        } else {
+          el.innerHTML = message;
+        }
       }
 
       function goTo(selector) {
@@ -2868,28 +2414,22 @@
       }
 
       document.querySelectorAll('.quick-need-btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          goTo(btn.getAttribute('data-go'));
-        });
+        btn.addEventListener('click', function () { goTo(btn.getAttribute('data-go')); });
       });
 
-      const areaSelect = document.getElementById('focusAreaSelect');
-      const applyBtn = document.getElementById('applyAreaFocusBtn');
-
-      function normalizeAreaTitle(text) {
-        return (text || '').toLowerCase()
-          .replace(/đ/g, 'd')
-          .replace(/[()]/g, '')
-          .replace(/\s+/g, '')
-          .trim();
+      function getAreaCards() {
+        const section = document.getElementById('khuvuc');
+        if (!section) return [];
+        return Array.from(section.querySelectorAll('.area-card'));
       }
 
-      function areaKeyFromTitle(text) {
-        const t = normalizeAreaTitle(text);
-        if (t.includes('kado')) return 'kado';
-        if (t.includes('quanglap')) return 'quanglap';
-        if (t.includes('proh')) return 'proh';
-        if (t.includes('kadon')) return 'kadon';
+      function keyFromCard(card) {
+        const text = (card.querySelector('h3')?.textContent || card.textContent || '').toLowerCase()
+          .replace(/đ/g, 'd').replace(/[()]/g, '').replace(/\s+/g, '');
+        if (text.includes('kado')) return 'kado';
+        if (text.includes('quanglap')) return 'quanglap';
+        if (text.includes('proh')) return 'proh';
+        if (text.includes('kadon')) return 'kadon';
         return '';
       }
 
@@ -2901,25 +2441,20 @@
           note = document.createElement('div');
           note.id = 'areaFilterNote';
           note.className = 'area-filter-note';
-          section.querySelector('.container')?.prepend(note);
+          const container = section.querySelector('.container');
+          if (container) container.prepend(note);
         }
         return note;
       }
 
       function filterArea() {
-        const selected = areaSelect ? areaSelect.value : 'all';
-        const section = document.getElementById('khuvuc');
-        if (!section) return;
-
-        const cards = section.querySelectorAll('.area-card');
+        const select = document.getElementById('focusAreaSelect');
+        const selected = select ? select.value : 'all';
+        const cards = getAreaCards();
         cards.forEach(function (card) {
-          const title = card.querySelector('h3, h2, .area-title');
-          const key = areaKeyFromTitle(title ? title.textContent : card.textContent);
-          if (selected === 'all' || key === selected) {
-            card.classList.remove('hidden-area-card');
-          } else {
-            card.classList.add('hidden-area-card');
-          }
+          const key = keyFromCard(card);
+          if (selected === 'all' || key === selected) card.classList.remove('area-hidden-by-filter');
+          else card.classList.add('area-hidden-by-filter');
         });
 
         const note = ensureAreaNote();
@@ -2928,45 +2463,71 @@
             note.classList.remove('show');
             note.textContent = '';
           } else {
-            const areaName = (salesByArea[selected] || techByArea[selected]).area;
-            note.textContent = 'Đang hiển thị nhân viên khu vực ' + areaName + '. Bấm “Hiện tất cả khu vực” để xem đầy đủ.';
+            note.textContent = 'Đang hiển thị nhân viên khu vực ' + salesByArea2[selected].area + '.';
             note.classList.add('show');
           }
         }
-
         goTo('#khuvuc');
       }
 
-      if (applyBtn) applyBtn.addEventListener('click', filterArea);
-      if (areaSelect) areaSelect.addEventListener('change', filterArea);
+      const apply = document.getElementById('applyAreaFocusBtn');
+      const select = document.getElementById('focusAreaSelect');
+      if (apply) apply.addEventListener('click', filterArea);
+      if (select) select.addEventListener('change', filterArea);
 
-      const quickRegisterBtn = document.getElementById('quickRegisterBtn');
-      if (quickRegisterBtn) {
-        quickRegisterBtn.addEventListener('click', async function () {
+      function buildQuickMessage(receiver, name, phone, area, need, note) {
+        return 'Em cần tư vấn/lắp đặt VNPT địa bàn ' + receiver.area + '.\n' +
+          'Họ tên: ' + name + '\n' +
+          'Số điện thoại: ' + phone + '\n' +
+          'Nhu cầu: ' + need + '\n' +
+          'Ghi chú: ' + note + '\n\n' +
+          'Người nhận: ' + receiver.role + ' ' + receiver.name + ' - ' + receiver.phone + '.';
+      }
+
+      async function copyTextSafe(text) {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (e) {
+          return false;
+        }
+      }
+
+      const quickBtn = document.getElementById('quickRegisterBtn');
+      if (quickBtn) {
+        quickBtn.addEventListener('click', async function () {
           const name = document.getElementById('quickName')?.value.trim() || 'Khách hàng';
           const phone = document.getElementById('quickPhone')?.value.trim() || 'Chưa nhập số';
           const area = document.getElementById('quickArea')?.value || 'kado';
+          const receiverType = document.getElementById('quickReceiver')?.value || 'sales';
           const need = document.getElementById('quickNeed')?.value || 'Tư vấn dịch vụ';
           const note = document.getElementById('quickNote')?.value.trim() || 'Chưa có ghi chú';
-          const sales = salesByArea[area];
 
-          const message = 'Em cần tư vấn/lắp đặt VNPT địa bàn ' + sales.area + '.\n' +
-            'Họ tên: ' + name + '\n' +
-            'Số điện thoại: ' + phone + '\n' +
-            'Nhu cầu: ' + need + '\n' +
-            'Ghi chú: ' + note + '\n\n' +
-            'Nhờ ' + sales.name + ' hỗ trợ tư vấn giúp em.';
+          const sales = salesByArea2[area];
+          const tech = techByArea2[area];
 
-          try {
-            await navigator.clipboard.writeText(message);
-            toast('Đã tạo nội dung. Đang mở Zalo nhân viên kinh doanh.');
-          } catch (e) {
-            toast('Đang mở Zalo nhân viên kinh doanh.');
+          if (receiverType === 'tech') {
+            const message = buildQuickMessage(tech, name, phone, area, need, note);
+            await copyTextSafe(message);
+            showSmallToast('Đã tạo nội dung. Đang mở Zalo Kỹ Thuật Địa Bàn.');
+            setTimeout(function () { window.open('https://zalo.me/' + tech.zalo, '_blank', 'noopener'); }, 350);
+            return;
           }
 
-          setTimeout(function () {
-            window.open('https://zalo.me/' + sales.zalo, '_blank', 'noopener');
-          }, 350);
+          if (receiverType === 'both') {
+            const message = buildQuickMessage(sales, name, phone, area, need, note) + '\n\n' +
+              'Kỹ thuật phối hợp: ' + tech.role + ' ' + tech.name + ' - ' + tech.phone + '.';
+            await copyTextSafe(message);
+            showSmallToast('Đã tạo nội dung. Mở Zalo Kinh Doanh trước, sau đó có thể gửi tiếp Kỹ Thuật.');
+            setTimeout(function () { window.open('https://zalo.me/' + sales.zalo, '_blank', 'noopener'); }, 350);
+            setTimeout(function () { window.open('https://zalo.me/' + tech.zalo, '_blank', 'noopener'); }, 1200);
+            return;
+          }
+
+          const message = buildQuickMessage(sales, name, phone, area, need, note);
+          await copyTextSafe(message);
+          showSmallToast('Đã tạo nội dung. Đang mở Zalo Kinh Doanh Địa Bàn.');
+          setTimeout(function () { window.open('https://zalo.me/' + sales.zalo, '_blank', 'noopener'); }, 350);
         });
       }
 
@@ -2974,24 +2535,16 @@
       document.querySelectorAll('[data-trouble]').forEach(function (btn) {
         btn.addEventListener('click', function () {
           const type = btn.getAttribute('data-trouble');
-          let html = '';
-          if (type === 'lost') {
-            html = '<strong>Gợi ý:</strong> Kiểm tra nguồn modem, dây quang/dây LAN. Nếu vẫn mất mạng, nên gửi vị trí và gọi Kỹ Thuật Địa Bàn.';
-          } else if (type === 'slow') {
-            html = '<strong>Gợi ý:</strong> Khởi động lại modem, đứng gần WiFi để kiểm tra. Nhà rộng/nhiều tầng nên tư vấn thêm Mesh WiFi.';
-          } else if (type === 'wifi') {
-            html = '<strong>Gợi ý:</strong> Kiểm tra modem có phát WiFi không. Nếu cần đổi tên/mật khẩu WiFi, liên hệ Kỹ Thuật Địa Bàn.';
-          } else {
-            html = '<strong>Gợi ý:</strong> Kiểm tra nguồn đầu thu MyTV, dây HDMI/LAN. Nếu vẫn lỗi, liên hệ Kỹ Thuật Địa Bàn.';
-          }
-
-          html += '<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">' +
-            '<a class="advisor-primary" href="#gui-vi-tri">Gửi vị trí</a>' +
-            '<a class="advisor-secondary" href="#khuvuc">Gọi kỹ thuật địa bàn</a>' +
-            '</div>';
-
+          let msg = '';
+          if (type === 'lost') msg = 'Kiểm tra nguồn modem, dây quang/dây LAN. Nếu vẫn mất mạng, nên gửi vị trí và gọi Kỹ Thuật Địa Bàn.';
+          else if (type === 'slow') msg = 'Khởi động lại modem, đứng gần WiFi để kiểm tra. Nhà rộng/nhiều tầng nên tư vấn thêm Mesh WiFi.';
+          else if (type === 'wifi') msg = 'Kiểm tra modem có phát WiFi không. Nếu cần đổi tên/mật khẩu WiFi, liên hệ Kỹ Thuật Địa Bàn.';
+          else msg = 'Kiểm tra nguồn đầu thu MyTV, dây HDMI/LAN. Nếu vẫn lỗi, liên hệ Kỹ Thuật Địa Bàn.';
           if (troubleResult) {
-            troubleResult.innerHTML = html;
+            troubleResult.innerHTML = '<strong>Gợi ý:</strong> ' + msg +
+              '<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">' +
+              '<a class="advisor-primary" href="#gui-vi-tri">Gửi vị trí</a>' +
+              '<a class="advisor-secondary" href="#khuvuc">Gọi kỹ thuật địa bàn</a></div>';
             troubleResult.classList.add('show');
           }
         });
