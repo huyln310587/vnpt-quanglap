@@ -127,3 +127,19 @@ Phần gửi vị trí đã thêm sẵn mẫu câu. Khi khách bấm nút, websi
 - Đã đổi số Mr.Tri Toàn thành `0916290682`.
 - Đã thêm lại nút Zalo đúng theo số `0916290682`.
 - Nút gọi và Zalo đều dùng số mới.
+
+
+## Hiện lại Zalo Mr.Tri Toàn
+
+- Đã sửa trực tiếp thẻ nhân viên Mr.Tri Toàn để hiện đủ 2 nút:
+  - Gọi: 0916290682
+  - Zalo: https://zalo.me/0916290682
+
+## Thêm tính năng mới
+
+Đã thêm các tính năng:
+- Nút nổi thao tác nhanh: gọi nhanh, gửi vị trí, tư vấn gói, lên đầu trang.
+- Tư vấn gói dịch vụ nhanh theo nhu cầu khách hàng.
+- FAQ câu hỏi thường gặp.
+- Gợi ý cài web như ứng dụng PWA trên điện thoại.
+- Toast thông báo khi sao chép nội dung.

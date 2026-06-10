@@ -1554,6 +1554,75 @@
       width: 100%;
     }
 
+
+    .feature-section { background: linear-gradient(180deg, #f7fbff, #ffffff); }
+    .advisor-card {
+      background: #fff; border: 1px solid var(--border); border-radius: 32px; padding: 26px;
+      box-shadow: var(--shadow); display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 22px; align-items: stretch;
+    }
+    .advisor-intro {
+      background: linear-gradient(135deg, var(--blue), var(--blue-dark)); color: #fff; border-radius: 26px;
+      padding: 28px; display: flex; flex-direction: column; justify-content: center;
+    }
+    .advisor-intro h2 { margin: 0 0 12px; font-size: clamp(27px, 4vw, 42px); line-height: 1.12; letter-spacing: -0.9px; }
+    .advisor-intro p { margin: 0; line-height: 1.65; opacity: 0.94; }
+    .advisor-panel { border: 1px solid var(--border); border-radius: 26px; padding: 22px; background: #f8fbff; }
+    .advisor-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+    .advisor-option {
+      display: flex; gap: 10px; align-items: flex-start; background: #fff; border: 1px solid #cde2f5;
+      border-radius: 16px; padding: 13px; font-weight: 850; color: #0b2545; cursor: pointer;
+    }
+    .advisor-option input { margin-top: 3px; transform: scale(1.15); }
+    .advisor-result {
+      background: #fff; border: 1px dashed #9fd4ff; border-radius: 18px; padding: 16px;
+      min-height: 104px; line-height: 1.6; color: #344054;
+    }
+    .advisor-result h3 { color: #0b2545; margin: 0 0 8px; }
+    .advisor-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .advisor-actions a, .advisor-actions button {
+      border: 0; border-radius: 14px; padding: 12px 14px; font-family: inherit; font-weight: 900;
+      cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center;
+    }
+    .advisor-primary { background: var(--green); color: #fff; }
+    .advisor-secondary { background: #e8f5ff; color: var(--blue); border: 1px solid #cde9ff !important; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 22px; box-shadow: 0 12px 28px rgba(16,24,40,.06); overflow: hidden; }
+    .faq-question {
+      width: 100%; border: 0; background: #fff; color: #0b2545; padding: 18px; font-family: inherit;
+      font-size: 16px; font-weight: 900; text-align: left; cursor: pointer; display: flex; justify-content: space-between; gap: 12px; align-items: center;
+    }
+    .faq-answer { display: none; padding: 0 18px 18px; color: #475467; line-height: 1.65; }
+    .faq-item.open .faq-answer { display: block; }
+    .quick-float { position: fixed; right: 18px; bottom: 18px; z-index: 8888; display: grid; gap: 10px; }
+    .quick-float a, .quick-float button {
+      width: 52px; height: 52px; border-radius: 999px; border: 0; box-shadow: 0 12px 26px rgba(16,24,40,.22);
+      display: grid; place-items: center; font-size: 22px; cursor: pointer; text-decoration: none; background: var(--blue); color: #fff;
+    }
+    .quick-float .green { background: var(--green); }
+    .quick-float .soft { background: #fff; color: var(--blue); border: 1px solid #cde9ff; }
+    .install-banner {
+      display: none; position: fixed; left: 16px; right: 16px; bottom: 88px; z-index: 8887; background: #fff;
+      border: 1px solid var(--border); box-shadow: var(--shadow); border-radius: 22px; padding: 14px; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .install-banner.show { display: flex; }
+    .install-banner strong { color: #0b2545; display: block; margin-bottom: 3px; }
+    .install-banner span { color: #667085; font-size: 13px; }
+    .install-banner button { border: 0; border-radius: 12px; padding: 10px 12px; font-weight: 900; cursor: pointer; font-family: inherit; }
+    .install-now { background: var(--blue); color: #fff; }
+    .install-close { background: #eef6ff; color: var(--blue); }
+    .toast {
+      position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 99999;
+      background: rgba(11,37,69,.94); color: #fff; padding: 12px 16px; border-radius: 999px; font-weight: 850; display: none; box-shadow: 0 16px 34px rgba(0,0,0,.2);
+    }
+    .toast.show { display: block; }
+    @media (max-width: 1000px) { .advisor-card { grid-template-columns: 1fr; } .faq-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 620px) {
+      .advisor-options { grid-template-columns: 1fr; }
+      .quick-float { right: 12px; bottom: 12px; }
+      .quick-float a, .quick-float button { width: 48px; height: 48px; }
+      .install-banner { bottom: 76px; }
+    }
+
 </style>
 
   <link rel="manifest" href="/manifest.webmanifest">
@@ -1601,6 +1670,8 @@
         <a href="#dichvu">Thiết bị</a>
         <a href="#video-dau-trang">Video</a>
         <a href="#gui-vi-tri">Gửi vị trí</a>
+        <a href="#goi-y-dich-vu">Tư vấn gói</a>
+        <a href="#faq">FAQ</a>
         <a href="#poster-goicuoc">Quảng bá</a>
         <a href="#goicuoc">Gói cước</a>
         <a href="#khuvuc">Khu vực</a>
@@ -1882,6 +1953,36 @@
       </div>
     </section>
 
+    
+    <section id="goi-y-dich-vu" class="section feature-section">
+      <div class="container">
+        <div class="advisor-card">
+          <div class="advisor-intro">
+            <h2>Tư vấn gói dịch vụ nhanh</h2>
+            <p>Khách hàng chọn nhu cầu sử dụng, website sẽ gợi ý nhóm dịch vụ phù hợp để dễ trao đổi với nhân viên kinh doanh địa bàn.</p>
+          </div>
+          <div class="advisor-panel">
+            <div class="advisor-options">
+              <label class="advisor-option"><input type="checkbox" value="internet"> Internet mạnh, WiFi ổn định</label>
+              <label class="advisor-option"><input type="checkbox" value="mytv"> Xem truyền hình, thể thao, phim</label>
+              <label class="advisor-option"><input type="checkbox" value="camera"> Lắp camera giám sát</label>
+              <label class="advisor-option"><input type="checkbox" value="mesh"> Nhà rộng, nhiều tầng, WiFi yếu</label>
+              <label class="advisor-option"><input type="checkbox" value="business"> Hộ kinh doanh/cửa hàng</label>
+              <label class="advisor-option"><input type="checkbox" value="repair"> Cần sửa chữa kỹ thuật</label>
+            </div>
+            <div class="advisor-result" id="advisorResult">
+              <h3>Gợi ý ban đầu</h3>
+              <p>Chọn nhu cầu bên trên để nhận gợi ý gói Internet, MyTV, Camera hoặc Mesh WiFi phù hợp.</p>
+            </div>
+            <div class="advisor-actions">
+              <a class="advisor-primary" href="#khuvuc">Liên hệ nhân viên địa bàn</a>
+              <button class="advisor-secondary" id="copyAdvisorBtn" type="button">Sao chép nội dung tư vấn</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="dichvu" class="section">
       <div class="container">
         <div class="section-title">
@@ -2021,6 +2122,34 @@
               </div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Câu hỏi thường gặp</h2>
+          <p>Một số câu hỏi khách hàng thường cần khi lắp đặt hoặc sửa chữa dịch vụ VNPT địa bàn Quảng Lập.</p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question" type="button">Mạng chậm hoặc mất mạng thì làm gì? <span>+</span></button>
+            <div class="faq-answer">Chọn đúng khu vực đang sử dụng dịch vụ, bấm gọi Kỹ Thuật Địa Bàn hoặc gửi tọa độ để nhân viên hỗ trợ nhanh hơn.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">Muốn lắp Internet mới liên hệ ai? <span>+</span></button>
+            <div class="faq-answer">Chọn khu vực cần lắp đặt, bấm gọi hoặc Zalo Kinh Doanh Địa Bàn để được tư vấn gói phù hợp.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">Nhà nhiều tầng WiFi yếu xử lý sao? <span>+</span></button>
+            <div class="faq-answer">Có thể tư vấn thêm Mesh WiFi để mở rộng vùng phủ sóng, giảm điểm yếu WiFi trong nhà nhiều tầng hoặc diện tích rộng.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button">Có hỗ trợ MyTV, Camera không? <span>+</span></button>
+            <div class="faq-answer">Có. Website có thông tin các dịch vụ Internet, MyTV, Camera và Mesh WiFi. Khách hàng liên hệ nhân viên kinh doanh theo khu vực để được tư vấn.</div>
+          </div>
         </div>
       </div>
     </section>
@@ -2259,6 +2388,126 @@
       });
 
       mapBtn.addEventListener("click", openMap);
+    })();
+  </script>
+
+
+  <div class="quick-float" aria-label="Thao tác nhanh">
+    <a class="green" href="tel:0914404080" title="Gọi nhanh kỹ thuật">☎</a>
+    <a href="#gui-vi-tri" title="Gửi vị trí">📍</a>
+    <a class="soft" href="#goi-y-dich-vu" title="Tư vấn gói">💡</a>
+    <button class="soft" id="backToTopBtn" type="button" title="Lên đầu trang">↑</button>
+  </div>
+  <div class="install-banner" id="installBanner">
+    <div>
+      <strong>Cài web như ứng dụng điện thoại</strong>
+      <span>Truy cập nhanh VNPT địa bàn Quảng Lập từ màn hình chính.</span>
+    </div>
+    <div>
+      <button class="install-now" id="installPwaBtn" type="button">Cài</button>
+      <button class="install-close" id="closeInstallBtn" type="button">Đóng</button>
+    </div>
+  </div>
+  <div class="toast" id="siteToast">Đã sao chép</div>
+
+
+  <script>
+    (function () {
+      const advisorInputs = document.querySelectorAll('.advisor-option input');
+      const advisorResult = document.getElementById('advisorResult');
+      const copyAdvisorBtn = document.getElementById('copyAdvisorBtn');
+      const toast = document.getElementById('siteToast');
+      let advisorText = '';
+
+      function showToast(message) {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(function () { toast.classList.remove('show'); }, 1800);
+      }
+
+      function updateAdvisor() {
+        if (!advisorResult) return;
+        const selected = Array.from(advisorInputs).filter(function(i){ return i.checked; }).map(function(i){ return i.value; });
+        let lines = [];
+
+        if (selected.length === 0) {
+          advisorResult.innerHTML = '<h3>Gợi ý ban đầu</h3><p>Chọn nhu cầu bên trên để nhận gợi ý gói Internet, MyTV, Camera hoặc Mesh WiFi phù hợp.</p>';
+          advisorText = 'Khách hàng cần tư vấn dịch vụ VNPT địa bàn Quảng Lập.';
+          return;
+        }
+
+        if (selected.includes('repair')) lines.push('Ưu tiên liên hệ Kỹ Thuật Địa Bàn để kiểm tra/sửa chữa dịch vụ.');
+        if (selected.includes('internet')) lines.push('Nên tư vấn gói Internet cáp quang phù hợp nhu cầu sử dụng.');
+        if (selected.includes('mytv')) lines.push('Có thể tư vấn thêm MyTV cho nhu cầu truyền hình, phim, thể thao.');
+        if (selected.includes('camera')) lines.push('Có thể tư vấn combo Internet + Camera giám sát.');
+        if (selected.includes('mesh')) lines.push('Nên kiểm tra vùng phủ sóng và tư vấn thêm Mesh WiFi.');
+        if (selected.includes('business')) lines.push('Hộ kinh doanh nên ưu tiên gói ổn định, có thể kết hợp Camera/Mesh theo mặt bằng.');
+
+        advisorText = 'Khách hàng cần tư vấn VNPT địa bàn Quảng Lập:\n- ' + lines.join('\n- ');
+        advisorResult.innerHTML = '<h3>Gợi ý phù hợp</h3><ul>' + lines.map(function(l){ return '<li>' + l + '</li>'; }).join('') + '</ul>';
+      }
+
+      advisorInputs.forEach(function(input){ input.addEventListener('change', updateAdvisor); });
+      updateAdvisor();
+
+      if (copyAdvisorBtn) {
+        copyAdvisorBtn.addEventListener('click', async function () {
+          try {
+            await navigator.clipboard.writeText(advisorText || 'Khách hàng cần tư vấn dịch vụ VNPT địa bàn Quảng Lập.');
+            showToast('Đã sao chép nội dung tư vấn');
+          } catch (e) {
+            showToast('Không sao chép được');
+          }
+        });
+      }
+
+      document.querySelectorAll('.faq-question').forEach(function (button) {
+        button.addEventListener('click', function () {
+          const item = button.closest('.faq-item');
+          if (!item) return;
+          item.classList.toggle('open');
+          const plus = button.querySelector('span');
+          if (plus) plus.textContent = item.classList.contains('open') ? '−' : '+';
+        });
+      });
+
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      let deferredPrompt = null;
+      const installBanner = document.getElementById('installBanner');
+      const installPwaBtn = document.getElementById('installPwaBtn');
+      const closeInstallBtn = document.getElementById('closeInstallBtn');
+
+      window.addEventListener('beforeinstallprompt', function (event) {
+        event.preventDefault();
+        deferredPrompt = event;
+        if (installBanner) installBanner.classList.add('show');
+      });
+
+      if (installPwaBtn) {
+        installPwaBtn.addEventListener('click', async function () {
+          if (!deferredPrompt) {
+            showToast('Vào menu trình duyệt và chọn Thêm vào màn hình chính');
+            return;
+          }
+          deferredPrompt.prompt();
+          await deferredPrompt.userChoice;
+          deferredPrompt = null;
+          if (installBanner) installBanner.classList.remove('show');
+        });
+      }
+
+      if (closeInstallBtn) {
+        closeInstallBtn.addEventListener('click', function () {
+          if (installBanner) installBanner.classList.remove('show');
+        });
+      }
     })();
   </script>
 
